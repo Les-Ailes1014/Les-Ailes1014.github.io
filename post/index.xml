@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on 冬日晴空</title>
-        <link>http://localhost:1313/post/</link>
+        <link>https://Les-Ailes1014.github.io/post/</link>
         <description>Recent content in Posts on 冬日晴空</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>牢大</copyright>
-        <lastBuildDate>Thu, 05 Jun 2025 18:29:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>冬日晴空</copyright>
+        <lastBuildDate>Thu, 05 Jun 2025 18:29:33 +0800</lastBuildDate><atom:link href="https://Les-Ailes1014.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>测试博客</title>
-        <link>http://localhost:1313/p/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</link>
+        <link>https://Les-Ailes1014.github.io/p/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Thu, 05 Jun 2025 18:29:33 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/0a16c43f8794a4c2fe5b9e7719f41bd5ac6e3994.jpg" alt="Featured image of post 测试博客" /&gt;&lt;p&gt;Headings&lt;/p&gt;
+        <guid>https://Les-Ailes1014.github.io/p/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="https://Les-Ailes1014.github.io/p/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/0a16c43f8794a4c2fe5b9e7719f41bd5ac6e3994.jpg" alt="Featured image of post 测试博客" /&gt;&lt;p&gt;Headings&lt;/p&gt;
 &lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;只因&#34;&gt;只因
 &lt;/h1&gt;&lt;p&gt;只因你太美，哦，baby，只因你是在是太美，迎面走来的你让我如此蠢蠢欲动，这种感觉我从未有，cause i got a crush on you who you，所有人都在看着你，我的心总是不安，哦，我现在已经病入膏肓，第一次变成这样的我，让我怎么去否认。鸡你太美，哦，baby，哦，鸡你实在是太美，再看一眼多看一眼就会爆炸，再靠近点多靠近点就会融化，想把你据为己有babybei，不管走到哪里想的都是你 uu
@@ -196,52 +196,53 @@ C11H45O14 乙烯一克，一克一克2&lt;/p&gt;
         </item>
         <item>
         <title>MyFirstBlog</title>
-        <link>http://localhost:1313/p/myfirstblog/</link>
+        <link>https://Les-Ailes1014.github.io/p/myfirstblog/</link>
         <pubDate>Tue, 03 Jun 2025 16:54:44 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/myfirstblog/</guid>
+        <guid>https://Les-Ailes1014.github.io/p/myfirstblog/</guid>
         <description>&lt;h4 id=&#34;hello-world&#34;&gt;Hello World!
 &lt;/h4&gt;</description>
         </item>
         <item>
         <title>这是一个图床测试</title>
-        <link>http://localhost:1313/p/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/</link>
+        <link>https://Les-Ailes1014.github.io/p/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/</link>
         <pubDate>Wed, 01 Jan 2025 10:40:46 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/test2.JPG" alt="Featured image of post 这是一个图床测试" /&gt;&lt;p&gt;&lt;img src=&#34;D:%5chugo_extended_0.147.7_windows-amd64%5cdev%5ccontent%5cpost%5cpic%5ctest2.JPG&#34;
+        <guid>https://Les-Ailes1014.github.io/p/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/</guid>
+        <description>&lt;img src="https://Les-Ailes1014.github.io/p/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/test2.JPG" alt="Featured image of post 这是一个图床测试" /&gt;&lt;h3 id=&#34;111&#34;&gt;111
+&lt;/h3&gt;&lt;p&gt;qweqwewefrsdfsdf&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://d-sketon.top/img/backwebp/bg1.webp&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5chugo_extended_0.147.7_windows-amd64%5cdev%5ccontent%5cpost%5cpic%5ctest4.JPG&#34;
+		alt=&#34;image&#34;
 	
 	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5chugo_extended_0.147.7_windows-amd64%5cdev%5ccontent%5cpost%5cpic%5ctest3.JPG&#34;
+&gt;
+&lt;img src=&#34;D:%5chugo_extended_0.147.7_windows-amd64%5cdev%5ccontent%5cpost%5cpic%5ctest2.JPG&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
+		alt=&#34;image&#34;
+	
 	
 &gt;&lt;/p&gt;
+&lt;h2 id=&#34;1221&#34;&gt;1221
+&lt;/h2&gt;&lt;p&gt;test&lt;/p&gt;
+&lt;p&gt;man!man!man!man!man!man!man!say!&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Chinese Test</title>
-        <link>http://localhost:1313/p/test-chinese/</link>
+        <link>https://Les-Ailes1014.github.io/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/test-chinese/</guid>
-        <description>&lt;img src="http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
+        <guid>https://Les-Ailes1014.github.io/p/test-chinese/</guid>
+        <description>&lt;img src="https://Les-Ailes1014.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
 &lt;/h2&gt;&lt;h3 id=&#34;哎哟卧槽吓我一跳释放忍术&#34;&gt;哎哟卧槽吓我一跳释放忍术
 &lt;/h3&gt;&lt;h4 id=&#34;影分身十字斩&#34;&gt;影分身十字斩
 &lt;/h4&gt;&lt;p&gt;&lt;strong&gt;纳米悠悠球&lt;/strong&gt;&lt;/p&gt;
@@ -257,10 +258,10 @@ C11H45O14 乙烯一克，一克一克2&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, https://Les-Ailes1014.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -270,10 +271,10 @@ C11H45O14 乙烯一克，一克一克2&lt;/p&gt;
 		data-flex-grow=&#34;66&#34;
 		data-flex-basis=&#34;160px&#34;
 	
-&gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://Les-Ailes1014.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;667&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, https://Les-Ailes1014.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
@@ -284,10 +285,10 @@ C11H45O14 乙烯一克，一克一克2&lt;/p&gt;
 		data-flex-basis=&#34;359px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;750&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, https://Les-Ailes1014.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
@@ -297,10 +298,10 @@ C11H45O14 乙烯一克，一克一克2&lt;/p&gt;
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://Les-Ailes1014.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, https://Les-Ailes1014.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
@@ -329,11 +330,11 @@ C11H45O14 乙烯一克，一克一克2&lt;/p&gt;
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>http://localhost:1313/p/markdown-syntax-guide/</link>
+        <link>https://Les-Ailes1014.github.io/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="http://localhost:1313/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+        <guid>https://Les-Ailes1014.github.io/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="https://Les-Ailes1014.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings
 &lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;h1&#34;&gt;H1
@@ -557,11 +558,11 @@ C11H45O14 乙烯一克，一克一克2&lt;/p&gt;
         </item>
         <item>
         <title>Placeholder Text</title>
-        <link>http://localhost:1313/p/placeholder-text/</link>
+        <link>https://Les-Ailes1014.github.io/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/placeholder-text/</guid>
-        <description>&lt;img src="http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+        <guid>https://Les-Ailes1014.github.io/p/placeholder-text/</guid>
+        <description>&lt;img src="https://Les-Ailes1014.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
 &lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
@@ -588,10 +589,10 @@ C11H45O14 乙烯一克，一克一克2&lt;/p&gt;
         </item>
         <item>
         <title>Math Typesetting</title>
-        <link>http://localhost:1313/p/math-typesetting/</link>
+        <link>https://Les-Ailes1014.github.io/p/math-typesetting/</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/math-typesetting/</guid>
+        <guid>https://Les-Ailes1014.github.io/p/math-typesetting/</guid>
         <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
 &lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
@@ -629,11 +630,11 @@ $$&lt;/p&gt;</description>
         </item>
         <item>
         <title>Emoji Support</title>
-        <link>http://localhost:1313/p/emoji-support/</link>
+        <link>https://Les-Ailes1014.github.io/p/emoji-support/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/emoji-support/</guid>
-        <description>&lt;img src="http://localhost:1313/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+        <guid>https://Les-Ailes1014.github.io/p/emoji-support/</guid>
+        <description>&lt;img src="https://Les-Ailes1014.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
