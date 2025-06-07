@@ -629,7 +629,7 @@ VII级魔术师，2007年于西安市总部注册，在多次行动中展现出�
 </description>
         </item>
         <item>
-        <title>归档</title>
+        <title>分类&amp;时间线</title>
         <link>https://Les-Ailes1014.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
@@ -973,59 +973,26 @@ $$&lt;/p&gt;</description>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://Les-Ailes1014.github.io/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
-&lt;h3 id=&#34;高性能模组服配置总价约-800-850&#34;&gt;&lt;strong&gt;高性能模组服配置&lt;/strong&gt;（总价约 ¥800-850）
-&lt;/h3&gt;&lt;table&gt;
+        <description>&lt;hr&gt;
+&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th&gt;配件&lt;/th&gt;
-          &lt;th&gt;型号&lt;/th&gt;
-          &lt;th&gt;价格&lt;/th&gt;
-          &lt;th&gt;关键升级点&lt;/th&gt;
+          &lt;th&gt;项目&lt;/th&gt;
+          &lt;th&gt;完成时间&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;CPU&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Intel Xeon E3-1231v3&lt;/td&gt;
-          &lt;td&gt;¥160&lt;/td&gt;
-          &lt;td&gt;4核8线程，全核3.6GHz，神U级性价比&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;网站上线，使用github托管页面&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2025.06.05&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;主板&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;精粤H97I-VH&lt;/td&gt;
-          &lt;td&gt;¥200&lt;/td&gt;
-          &lt;td&gt;全新ITX主板，支持DDR3 ECC&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;侧边栏更新自定义图标&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2025.06.06&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;内存&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;DDR3 1600MHz 8GB×4&lt;/td&gt;
-          &lt;td&gt;¥160&lt;/td&gt;
-          &lt;td&gt;32GB大内存，模组加载无忧&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;显卡&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;无需独立显卡&lt;/td&gt;
-          &lt;td&gt;¥0&lt;/td&gt;
-          &lt;td&gt;通过主板HDMI接口虚拟输出&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;存储&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;铨兴S101 512GB SATA SSD&lt;/td&gt;
-          &lt;td&gt;¥180&lt;/td&gt;
-          &lt;td&gt;双倍容量应对巨型模组包&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;电源&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;鑫谷核动力S7 150W&lt;/td&gt;
-          &lt;td&gt;¥60&lt;/td&gt;
-          &lt;td&gt;直插电源，ITX机箱完美适配&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;机箱&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;积至EVESKY 小王子&lt;/td&gt;
-          &lt;td&gt;¥40&lt;/td&gt;
-          &lt;td&gt;超薄17cm厚度，支持标准ITX主板&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;友链、归档多列显示&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2025.06.07&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
