@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://Les-Ailes1014.github.io/p/myfirstblog/'>
 
-<link rel="stylesheet" href="/scss/style.min.2e7afc8bd4534b71d94e23e27aef9c953cb37cf7a40a4d42ea7412b8415b0bee.css"><meta property='og:title' content="MyFirstBlog">
+<link rel="stylesheet" href="/scss/style.min.76eedf7d7767e9cf494c30ceb9c648351ee79e809828c2bde6ef325cbe6c6dcd.css"><meta property='og:title' content="MyFirstBlog">
 <meta property='og:description' content="Hello World! 男孩在梦中哭泣，女孩将男孩裹在自己抵挡风雪的斗篷中，为他拭去了眼泪。\n冰冷。断续。呼啸。\n巨人轻轻讲述一部遥远的史诗&hellip;&hellip;\n">
 <meta property='og:url' content='https://Les-Ailes1014.github.io/p/myfirstblog/'>
 <meta property='og:site_name' content='冬日晴空'>
@@ -543,6 +543,165 @@
         document.head.appendChild(customFont);
     }());
 </script>
+<style>
+  @font-face {
+    font-family: 'flowers';
+    src: url(https://Les-Ailes1014.github.io/font/flowers.ttf) format('truetype');
+  }
+
+  :root {
+    --base-font-family: 'flowers';
+    --code-font-family: 'flowers';
+  }
+</style>
+
+<style>
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+</style>
+
+<script>
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+
+<style>
+    .highlight {
+         
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://Les-Ailes1014.github.io/icons/codeMore.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<div id="aplayer"></div>
+
+<script>
+	const ap = new APlayer({
+		container: document.getElementById('aplayer'),
+		audio: [{
+			name: 'name',
+			artist: 'artist',
+			url: 'url.mp3',
+			cover: 'cover.jpg'
+		}]
+	});
+</script>
+
 
     </body>
 </html>
