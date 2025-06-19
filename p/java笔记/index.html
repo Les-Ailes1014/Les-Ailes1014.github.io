@@ -10,7 +10,7 @@
 <meta property='og:description' content="概述 编译java文件，要使用JDK中的javac.exe工具\njavac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。生成了jvm可以识别的字节码文件，也就是class文件，也就是java的运行程序\n">
 <meta property='og:url' content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='冬日晴空'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-06-19T17:26:31&#43;08:00'/><meta property='article:modified_time' content='2025-06-19T17:58:24&#43;08:00'/><meta property='og:image' content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-06-19T17:26:31&#43;08:00'/><meta property='article:modified_time' content='2025-06-19T18:09:58&#43;08:00'/><meta property='og:image' content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg' />
 <meta name="twitter:title" content="Java笔记">
 <meta name="twitter:description" content="概述 编译java文件，要使用JDK中的javac.exe工具\njavac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。生成了jvm可以识别的字节码文件，也就是class文件，也就是java的运行程序\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg' />
@@ -367,7 +367,18 @@
 A、al、$Systembol、square、ex_sa</p>
 <p>不合法：
 Ia、break、TWO WORDS、.NO</p>
-<p>![](2025-06-15 171855.jpg)</p>
+<p><img src="/p/java%E7%AC%94%E8%AE%B0/2025-06-15171855.png"
+	width="1459"
+	height="782"
+	srcset="/p/java%E7%AC%94%E8%AE%B0/2025-06-15171855_hu_d4c8e58f77359e03.png 480w, /p/java%E7%AC%94%E8%AE%B0/2025-06-15171855_hu_d112e2e418b0a510.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="447px"
+	
+></p>
 <p>char和string的区别</p>
 <p>char只能表示单字符，使用单引号包裹</p>
 <p>string需要用双引号包裹</p>
@@ -403,10 +414,17 @@ Ia、break、TWO WORDS、.NO</p>
 <p>类的全名称时 包名.类名</p>
 <p>包是一种封装形式，用于包装类，想要被包以外的程序访问，该类必须public</p>
 <p>类中的成员，如果被包以外访问，也必须public</p>
-<p><strong>import - 导入</strong>
-导入指定包中的类</p>
-<p>import packa.* ;导入了packa当前目录下所有的类，不包含子包</p>
-<p>java.lang</p>
+<p><strong>import - 导入</strong></p>
+<p>导入指定包中的类</p>
+<p><code>import packa.* ; //导入了packa当前目录下所有的类，不包含子包</code></p>
+<p><code>import packa.abc.*; //导入了packa包中的子包abc下的当前所有类</code></p>
+<p><code>java.lang：自动被导入</code></p>
+<p><code>java.awt：图形界面开发</code></p>
+<p><code>java.swing：图形界面库</code></p>
+<p><code>java.net：网络编程</code></p>
+<p><code>java.io：用于操作文件</code></p>
+<p><code>java.util：工具包、事件对象、集合框架</code></p>
+<p><code>java.applet：客户端java小程序</code></p>
 <p><strong>数据类型转换</strong></p>
 <p><strong>自动</strong>：转换前后类型兼容，转换后范围大于转换前，</p>
 <p><strong>强制</strong>：i = float j，容易丢失精度，转换数值不能超过目标类型的数值范围，如float&lt;double，不满足自动转换条件</p>
@@ -993,7 +1011,7 @@ String()</p>
 
 
         <span>
-            最后更新于 Jun 19, 2025 17:58 &#43;0800
+            最后更新于 Jun 19, 2025 18:09 &#43;0800
         </span>
     </section></footer>
 
