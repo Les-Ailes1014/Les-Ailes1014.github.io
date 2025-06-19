@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="概述 编译java文件，要使用JDK中的javac.exe工具\njavac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。生成了jvm可以识别的字节码文件，也就是class文件，也就是java的运行程序\n">
+<title>Java笔记</title>
+
+<link rel='canonical' href='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/'>
+
+<link rel="stylesheet" href="/scss/style.min.76eedf7d7767e9cf494c30ceb9c648351ee79e809828c2bde6ef325cbe6c6dcd.css"><meta property='og:title' content="Java笔记">
+<meta property='og:description' content="概述 编译java文件，要使用JDK中的javac.exe工具\njavac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。生成了jvm可以识别的字节码文件，也就是class文件，也就是java的运行程序\n">
+<meta property='og:url' content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/'>
+<meta property='og:site_name' content='冬日晴空'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-06-19T17:26:31&#43;08:00'/><meta property='article:modified_time' content='2025-06-19T17:48:08&#43;08:00'/><meta property='og:image' content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg' />
+<meta name="twitter:title" content="Java笔记">
+<meta name="twitter:description" content="概述 编译java文件，要使用JDK中的javac.exe工具\njavac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。生成了jvm可以识别的字节码文件，也就是class文件，也就是java的运行程序\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_91575d50eff97eff.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🌌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">冬日晴空</a></h1>
+            <h2 class="site-description">欢迎来到冬日晴空的小站！这里目前还没什么东西，不过我后续会努力更新的 此博客使用Hugo &#43; Stack主题搭建</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://steamcommunity.com/profiles/76561198351962786/'
+                        target="_blank"
+                        title="我的steam主页"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-steam"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.5 5a4.5 4.5 0 1 1 -.653 8.953l-4.347 3.009l0 .038a3 3 0 0 1 -2.824 3l-.176 0a3 3 0 0 1 -2.94 -2.402l-2.56 -1.098v-3.5l3.51 1.755a2.989 2.989 0 0 1 2.834 -.635l2.727 -3.818a4.5 4.5 0 0 1 4.429 -5.302z" /><circle cx="16.5" cy="9.5" r="1" fill="currentColor" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/80390495'
+                        target="_blank"
+                        title="我的哔哩哔哩主页"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://music.163.com/#/user/home?id=113126299'
+                        target="_blank"
+                        title="我的网易云音乐主页"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-netease-music"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 4c-2.93 1.346 -5 5.046 -5 8.492c0 4.508 4 7.508 8 7.508s8 -3 8 -7c0 -3.513 -3.5 -5.513 -6 -5.513s-5 1.513 -5 4.513c0 2 1.5 3 3 3s3 -1 3 -3c0 -3.513 -2 -4.508 -2 -6.515c0 -3.504 3.5 -2.603 4 -1.502" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-satellite"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z" /><path d="M6 10l-3 3l3 3l3 -3" /><path d="M10 6l3 -3l3 3l-3 3" /><path d="M12 12l1.5 1.5" /><path d="M14.5 17a2.5 2.5 0 0 0 2.5 -2.5" /><path d="M15 21a6 6 0 0 0 6 -6" /></svg>
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-universe"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7.027 11.477a5 5 0 1 0 5.496 -4.45a4.951 4.951 0 0 0 -3.088 .681" /><path d="M5.636 5.636a9 9 0 1 0 3.555 -2.188" /><path d="M18 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M9 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                
+                <span>分类&amp;时间线</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-telescope"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 21l6 -5l6 5" /><path d="M12 13v8" /><path d="M3.294 13.678l.166 .281c.52 .88 1.624 1.265 2.605 .91l14.242 -5.165a1.023 1.023 0 0 0 .565 -1.456l-2.62 -4.705a1.087 1.087 0 0 0 -1.447 -.42l-.056 .032l-12.694 7.618c-1.02 .613 -1.357 1.897 -.76 2.905z" /><path d="M14 5l3 5.5" /></svg>
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-globe"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 9a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M5.75 15a8.015 8.015 0 1 0 9.25 -13" /><path d="M11 17v4" /><path d="M7 21h8" /></svg>
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-planetscale"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.993 11.63a9 9 0 0 1 -9.362 9.362l9.362 -9.362z" /><path d="M12 3a9.001 9.001 0 0 1 8.166 5.211l-11.955 11.955a9 9 0 0 1 3.789 -17.166z" /><path d="M12 12l-6 6" /></svg>
+                
+                <span>更新日志</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#概述">概述</a></li>
+    <li><a href="#基础知识">基础知识</a></li>
+    <li><a href="#数据类型变量与运算符">数据类型、变量与运算符</a></li>
+    <li><a href="#流程控制">流程控制</a></li>
+    <li><a href="#数组">数组</a></li>
+    <li><a href="#字符串和字符">字符串和字符</a>
+      <ol>
+        <li><a href="#string类">String类</a></li>
+        <li><a href="#stringbuffer类">StringBuffer类</a></li>
+        <li><a href="#character类">Character类</a></li>
+      </ol>
+    </li>
+    <li><a href="#类">类</a>
+      <ol>
+        <li><a href="#构造方法">构造方法</a></li>
+        <li><a href="#方法重载">方法重载</a></li>
+        <li><a href="#封装">封装</a></li>
+        <li><a href="#可见性修饰符">可见性修饰符</a>
+          <ol>
+            <li><a href="#this">this</a></li>
+            <li><a href="#final">final</a></li>
+            <li><a href="#static">static</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#继承">继承</a></li>
+    <li><a href="#多态">多态</a></li>
+    <li><a href="#抽象接口">抽象、接口</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/java%E7%AC%94%E8%AE%B0/">
+                <img src="/p/java%E7%AC%94%E8%AE%B0/kobe_hu_35ada30d334dd591.jpg"
+                        srcset="/p/java%E7%AC%94%E8%AE%B0/kobe_hu_35ada30d334dd591.jpg 800w, /p/java%E7%AC%94%E8%AE%B0/kobe_hu_4f07b6d1bfacf74f.jpg 1600w"
+                        width="800" 
+                        height="499" 
+                        loading="lazy"
+                        alt="Featured image of post Java笔记" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/java%E7%AC%94%E8%AE%B0/">Java笔记</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 19, 2025</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="概述">概述
+</h2><p><strong>编译java文件，要使用JDK中的javac.exe工具</strong></p>
+<p>javac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。<strong>生成了jvm可以识别的字节码文件</strong>，也就是class文件，也就是java的运行程序</p>
+<p><strong>运行java程序，要使用JRE</strong></p>
+<p><strong>解释执行</strong>生成的<strong>class</strong>文件，要使用<strong>java.exe</strong>工具，负责运行的部分，会启动jvm，加载运行时所需的类库，并对class文件进行执行。</p>
+<p>一个文件要被执行，必须要有一个执行的起始点，这个起始点就是main函数。</p>
+<p>生成的文件扩展名：.class</p>
+<p>一个java文件中只能有一个public类，但是一个源文件里可以有多个class声明。</p>
+<p>类名必须和文件名一致。</p>
+<p>java虚拟机（JVM）：java程序的运行平台</p>
+<p>java项目的源文件在工程目录下<strong>src</strong>目录中</p>
+<p>编译后生成的<strong>class</strong>文件在<strong>bin</strong>目录中</p>
+<h2 id="基础知识">基础知识
+</h2><p><strong>标识符</strong></p>
+<p>Java符号分为<strong>标识符、关键字、运算符和分隔符</strong></p>
+<p>由<strong>字母、数字、__和$</strong> 组成。</p>
+<p>字母可以是<strong>大写或小写</strong>的英文字母</p>
+<p>数字从<strong>0到9</strong>，长度不限</p>
+<p><strong>第一个字符不能是数字，区分大小写</strong></p>
+<p>最好见名知义，规范大小写使用方式</p>
+<h2 id="数据类型变量与运算符">数据类型、变量与运算符
+</h2><p><strong>命名规则</strong></p>
+<p><strong>变量、方法名用小写字母，多个词组成的名称</strong></p>
+<p>从<strong>第二个词</strong>开始<strong>首字母大写</strong>（小驼峰）</p>
+<p>变量：radius、area   方法：computeArea showInputDialog</p>
+<p><strong>类名</strong>每一个词的首字母大写（驼峰命名法）</p>
+<p>ComputeArea、Math、JOptionPane</p>
+<p><strong>常量名</strong> 所有字母都要大写 每个词<strong>下划线</strong>分割</p>
+<p>PI、MAX_VALUE</p>
+<p><strong>包名</strong>全部用小写</p>
+<p><strong>严格区分大小写</strong>定义类时class不能写成Class</p>
+<p>定义一个computer时，还可定义一个computer</p>
+<p>合法标识符：
+A、al、$Systembol、square、ex_sa</p>
+<p>不合法：
+Ia、break、TWO WORDS、.NO</p>
+<p>![](2025-06-15 171855.png)</p>
+<p>char和string的区别</p>
+<p>char只能表示单字符，使用单引号包裹</p>
+<p>string需要用双引号包裹</p>
+<p><strong>变量</strong></p>
+<p>在Java中，所有变量必须先定义后使用</p>
+<p>格式为：</p>
+<p>数据类型 标识符1 [=初值],[标识符2&hellip;];</p>
+<p>int i = 0, j = 1;</p>
+<p><strong>变量要先定义/声明，再初始化，才能使用</strong></p>
+<p>System.out.println(&ldquo;字符串&rdquo;+变量+&hellip;&hellip;);</p>
+<p><strong>&quot;+&ldquo;用作算数运算符和字符串连接运算符</strong>，若其中某个操作数不是字符串，在连接之前会<strong>自动将其转换为字符串</strong></p>
+<p>System.out.println(&ldquo;i+j is&rdquo;+ i + j);</p>
+<p>System.out.println(&ldquo;i+j is&rdquo;+ (i + j));</p>
+<p><strong>常量</strong></p>
+<p>运行过程中<strong>只被赋值一次</strong>，不会变化</p>
+<p>1.以字面形式给出值的<strong>常数值</strong></p>
+<p>2.以关键字<strong>final</strong>定义的<strong>标识符常量</strong></p>
+<p>如final double PI = 3.1415;</p>
+<p>有整数型、浮点型、布尔型、字符型和字符串型5种常量。</p>
+<p><strong>常数值</strong></p>
+<p><strong>整形</strong>常数缺省类型为int</p>
+<p>默认情况下，<strong>整形常数值为十进制整数</strong></p>
+<p><strong>八进制</strong>常数以0开头，后跟0~7数字，如035</p>
+<p><strong>十六进制</strong>常数以0x开头，后跟0<del>9数字，或者a</del>f之间的小写或大写字母，如0x2f</p>
+<p><strong>浮点型常数值</strong>：double双精度(默认) 、float单精度</p>
+<p>浮点数的计算是近似计算，因此doluble类型比float类型更加准确</p>
+<p><strong>布尔型常数值（逻辑型常量）</strong></p>
+<p>有<strong>true</strong>和<strong>false</strong>两个值</p>
+<p><strong>字符型常数值</strong></p>
+<p><strong>包</strong>
+定义包用package关键字。</p>
+<p>package pack; 定义了一个包，名称为pack</p>
+<p>类的全名称时 包名.类名</p>
+<p>包是一种封装形式，用于包装类，想要被包以外的程序访问，该类必须public</p>
+<p>类中的成员，如果被包以外访问，也必须public</p>
+<p><strong>import - 导入</strong>
+导入指定包中的类</p>
+<p>import packa.* ;导入了packa当前目录下所有的类，不包含子包</p>
+<p>java.lang</p>
+<p><strong>数据类型转换</strong></p>
+<p><strong>自动</strong>：转换前后类型兼容，转换后范围大于转换前，</p>
+<p><strong>强制</strong>：i = float j，容易丢失精度，转换数值不能超过目标类型的数值范围，如float&lt;double，不满足自动转换条件</p>
+<p><strong>运算符</strong></p>
+<p>规定表达式中各变量和常量运算的符号。</p>
+<p><strong>算数运算符</strong>：+ - * / %，除数不能为零，整数相除结果只有整数部分。2/3=0，9.0%2.0=1.0</p>
+<p><strong>关系运算符</strong>：== ，！=， &gt;=，=&lt;，&gt;，&lt;。<strong>运算结果为布尔值</strong></p>
+<p><strong>逻辑运算符</strong>：非!、与&amp;&amp;、或||，异或^</p>
+<p><strong>赋值运算</strong>：=以及扩展赋值运算符</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">x</span><span class="o">*=</span><span class="n">y</span><span class="o">+</span><span class="n">10</span><span class="w"> </span><span class="n">相当于</span><span class="w"> </span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="n">y</span><span class="o">+</span><span class="n">10</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">x</span><span class="o">+=</span><span class="n">y</span><span class="o">+</span><span class="n">10</span><span class="w"> </span><span class="n">相当于</span><span class="w"> </span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="o">+</span><span class="n">10</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>判断奇数和偶数</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="n">30</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="n">2</span><span class="o">!=</span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="c1">//或 n%2==1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;变量n是奇数&#34;</span><span class="p">);</span><span class="c1">//注意：函数println是有换行，print()无换行</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">else</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;变量n是偶数&#34;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>判断是否被x整除</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">n</span><span class="o">%</span><span class="n">x</span><span class="o">==</span><span class="n">0</span><span class="w"> </span><span class="c1">//判断一个数是否被x整除</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="n">5</span><span class="o">==</span><span class="n">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">n</span><span class="o">%</span><span class="n">8</span><span class="o">==</span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="c1">//判断一个数是否被5或8整除</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="n">5</span><span class="o">==</span><span class="n">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">n</span><span class="o">%</span><span class="n">8</span><span class="o">==</span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="c1">//判断一个数是否同时被5和8整除</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 Java 里，<code>/</code> 是<strong>除法运算符</strong>，<code>%</code> 是<strong>取余（模）运算符</strong>，核心区别如下：</p>
+<ul>
+<li>
+<p><strong>运算目的</strong>：</p>
+</li>
+<li>
+<p><code>\</code> 计算<strong>商</strong>，整数相除会向下取整（如 <code>10 / 3 = 3</code> ）；若有浮点数参与，结果含小数（如 <code>10.0 / 3 = 3.333...</code> ）。 -</p>
+</li>
+<li>
+<p><code>%</code> 计算<strong>余数</strong>，返回被除数除以除数后剩余的数（如 <code>10 % 3 = 1</code> ，即 10 除以 3 商 3 余 1 ）。</p>
+</li>
+<li>
+<p><strong>使用场景</strong>： <code>\</code> 用于普通除法需求（如均分物品、计算比例 ）； - <code>%</code> 常用在判断奇偶（<code>x % 2 == 0</code> 为偶数 ）、循环取索引（如数组遍历控制 ）等场景。 简单说，<code>/</code> 求“能分几份”，<code>%</code> 求“分完剩下多少” 。</p>
+</li>
+</ul>
+<p><strong>ASCII字符</strong>：</p>
+<p>48~57：0-9</p>
+<p>65~90：A-Z</p>
+<p>97~122：a-z</p>
+<h2 id="流程控制">流程控制
+</h2><p>![](屏幕截图 2025-06-15 184544.png)</p>
+<p>while do循环：先执行语句块再判断条件</p>
+<p>for each循环：将字符串orders中的每个元素赋值给order，使用order.equals语句进行比较，相同之后break终止</p>
+<p><img src="/08125e41-abd1-4f7a-941e-0e55aa31d5b6.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>每10个数换行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="o">=</span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">do</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">条件2</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">输出满足条件2的数</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">%</span><span class="n">10</span><span class="o">==</span><span class="n">0</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="n">条件1</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Scanner库</p>
+<p>导入：import java.util.Scanner;</p>
+<p>创建对象：Scanner scanner = new Scanner(System.in);</p>
+<ul>
+<li>
+<p><code>new Scanner(...)</code>：创建 <code>Scanner</code> 对象，专门处理输入；</p>
+</li>
+<li>
+<p><code>System.in</code>：把 <code>Scanner</code> 绑定到 “控制台输入”，这样输入会从键盘读。</p>
+</li>
+<li>
+<p><code>nextLine()</code>：读一整行字符串（含空格）</p>
+</li>
+</ul>
+<h2 id="数组">数组
+</h2><p><strong>概念</strong>：<strong>相同数据类型</strong>的元素<strong>按一定顺序</strong>排列的集合，<strong>可以为简单数据类型，也可以为对象</strong>。</p>
+<p><strong>主要特点</strong>：各元素<strong>有先后顺序</strong>，按照这个先后顺序<strong>连续存放</strong>在一起。数据元素用整合数组的名字和他自己在数组中的顺序位置来表示，a[0]表示名字为a的数组中的<strong>第一个元素</strong>，a[1]代表数组a的第二个元素，以此类推</p>
+<p>使用new，要表明数组的长度：</p>
+<p>定义长度是5的数组，类型为char、boolean、String</p>
+<p>char[] arrar = new char[5];</p>
+<p>boolean[] array1 = new boolean[5];</p>
+<p>String[] array2 = new String[5]</p>
+<p>数组大小：array.length;</p>
+<p>array1[0] = 30;</p>
+<p>int i=0,count=0; 同类型变量，可以只写一次类型</p>
+<p>for(i=0; i &lt; array1.length;i++)</p>
+<p>或</p>
+<p>for(i=0; i &lt;= array1.length;i++)</p>
+<p>if(array1[i] &gt; 50)</p>
+<p>count++;</p>
+<p>类的构造方法、访问对象的成员、调用对象的成员方法、方法要先定义后调用</p>
+<p>为要创建的对象中成员变量赋初始值</p>
+<p>访问对象中的成员变量，使用“对象名.成员变量名”。</p>
+<p>class A{}</p>
+<p><strong>一维数组</strong></p>
+<p>格式为：</p>
+<p>`数组类型[] 数组名 或 数组类型 数组名[]</p>
+<p>![](屏幕截图 2025-06-15 190906.png)</p>
+<p>声明（等号左边）：</p>
+<p>`数组类型[] 数组名;</p>
+<p>`数据类型 数组名[];</p>
+<p>创建（等号右边）：</p>
+<p><code>数组名[数组长度];</code></p>
+<p><code>数组名[]{元素1,元素2,元素3...};</code></p>
+<p><code>{元素1,元素2,元素3...};</code></p>
+<p><strong>foreach循环</strong></p>
+<p>for(元素类型 元素变量:数组/集合) {}</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">5</span><span class="p">,</span><span class="w"> </span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">15</span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">num</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">sum</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 30</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">答案</span><span class="err">：</span><span class="kt">int</span><span class="err">，</span><span class="n">numbers</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>作用：遍历数组numbers中的所有元素</p>
+<p><strong>length变量</strong></p>
+<p>数组名.length</p>
+<p>用于获取数组的长度。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">5</span><span class="p">,</span><span class="w"> </span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">15</span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 用“数组名.length”获取长度</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">len</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 3（数组有 3 个元素）</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Java数组的元素类型既可以是基本数据类型（简单数据类型），也可以是引用类型（对象类型）。</p>
+<p>例如：</p>
+<p>1、int[]、char[]、double[] 等，直接存储基本类型的值。</p>
+<p>int[] numbers = {1, 2, 3};  // 存储基本类型int的值</p>
+<p>2、String[]、Object[] 或自定义类的数组，存储的是对象的引用（内存地址），而非对象本身。</p>
+<p>String[] names = {&ldquo;Alice&rdquo;, &ldquo;Bob&rdquo;};  // 存储String对象的引用</p>
+<p><strong>数组查找</strong>：</p>
+<p><strong>线性查找法</strong>：</p>
+<p>将要查找的关键元素key顺序的与数组中的每一个元素进行比较</p>
+<p>![](屏幕截图 2025-06-15 192108.png)</p>
+<p><strong>二分查找法</strong>：</p>
+<p>前提是数组中的元素必须已经被排好序</p>
+<p>![](屏幕截图 2025-06-15 192050.png)</p>
+<p><strong>数组排序：</strong></p>
+<p><strong>冒泡排序法</strong></p>
+<p>![](屏幕截图 2025-06-15 192345.png)</p>
+<p><strong>二维数组</strong></p>
+<p>类型标识符 数组名[][]</p>
+<p>数组名[]</p>
+<p>类型标识符[],[] 数组名</p>
+<p>例：</p>
+<p>`int arr[][];</p>
+<p>`int[]arr[];</p>
+<p>`int[][] arr;</p>
+<h2 id="字符串和字符">字符串和字符
+</h2><h3 id="string类">String类
+</h3><p><strong>创建方法</strong>
+String()</p>
+<p>String(char[] chararray)</p>
+<p>String(char[] chararray,int offset, int count)</p>
+<p>public int indexOf (String value, int startIndex)</p>
+<p>在字符串中从startIndex开始查找子串value，返回从 <code>beginIndex</code> 开始到串尾的子串，正确。</p>
+<p>public int indexOf (char c)
+查找字符 <code>c</code> </p>
+<p>public String subString(int fromIndex, int endIndex)</p>
+<p>返回从 <code>beginIndex</code> 开始到 <code>endIndex - 1</code> 的子串，不是到 <code>endIndex</code>。</p>
+<p>public char chatAt(int index)</p>
+<p>是获取指定索引的字符，不符合。</p>
+<p>String是引用数据类型，本质是类，而非基本数据类型</p>
+<p>字符串获取长度用length()方法<code>&quot;abc&quot;.length()</code></p>
+<p>数组获取长度用 <code>length</code> 属性<code>int[] arr = {1,2}; arr.length</code></p>
+<h3 id="stringbuffer类">StringBuffer类
+</h3><p><code>StringBuffer</code> 是 Java 提供的<strong>可变字符串类</strong>（还有类似的 <code>StringBuilder</code> ），存放在 <code>java.lang</code> 包中。</p>
+<ul>
+<li>
+<p><strong>特点</strong>：<br>
+字符串内容可以被修改（append、insert 等操作直接改原对象 ），不像 <code>String</code> 是 “不可变” 的（每次修改都会新建对象 ）。</p>
+</li>
+<li>
+<p><strong>用途</strong>：<br>
+当需要频繁拼接、修改字符串时（比如循环里拼接），用 <code>StringBuffer</code> 更高效，避免创建大量临时 <code>String</code> 对象。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">StringBuffer</span><span class="w"> </span><span class="n">sb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StringBuffer</span><span class="p">(</span><span class="s">&#34;Hello&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">sb</span><span class="p">.</span><span class="na">setCharAt</span><span class="p">(</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">sb</span><span class="p">.</span><span class="na">reverse</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">sb</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">2</span><span class="p">));</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<ol>
+<li>
+<p>sb.setCharAt(1, &lsquo;a&rsquo;) 将字符串变为 &ldquo;Hallo&rdquo;。 </p>
+</li>
+<li>
+<p>sb.reverse() 反转后字符串变为 &ldquo;ollaH&rdquo;。 </p>
+</li>
+<li>
+<p>charAt(2) 获取索引为2的字符 l。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">StringTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;hello&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;hello&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">s3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="s">&#34;hello&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">s2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">s3</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">       </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>s2为<strong>常量池中的字符串对象</strong>，节省内存</p>
+<p>s3是<strong>堆内存中的新对象</strong>，是强制在堆内存新建的对象（内存地址不同 ）。</p>
+</li>
+</ol>
+<p><strong>concat方法</strong>
+拼接字符串，返回<strong>新的 <code>String</code> 对象</strong>（原 <code>String</code> 不会被修改，因为 <code>String</code> 是不可变的 ）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Hello&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// concat 返回新对象，但没赋值给 s1，所以 s1 还是原来的 &#34;Hello&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">s1</span><span class="p">.</span><span class="na">concat</span><span class="p">(</span><span class="s">&#34; World&#34;</span><span class="p">);</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 &#34;Hello&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>append方法</strong>
+直接修改 <code>StringBuffer</code> 对象本身，在末尾拼接内容，<strong>不会新建对象</strong>（因为 <code>StringBuffer</code> 是可变的 ）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">StringBuffer</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StringBuffer</span><span class="p">(</span><span class="s">&#34;Hello&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// append 直接修改 s2，拼接后 s2 变成 &#34;Hello World&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">s2</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">&#34; World&#34;</span><span class="p">);</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s2</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 &#34;Hello World&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="character类">Character类
+</h3><h2 id="类">类
+</h2><p>由成员变量和成员方法组成。</p>
+<p>类是对象的抽象</p>
+<p>类是对象的模板，对象是类的实例。</p>
+<p>成员变量用于存储对象的状态，成员方法</p>
+<p>访问修饰符：包括public、private、protected和默认访问权限，只能同一包</p>
+<p>public拥有最大的权限，可以在本项目的任意类中访问</p>
+<p>protected可以在本包下和其子类访问</p>
+<p>default本包下的当前类和其他类可以访问</p>
+<p>private只能在当前类下访问。</p>
+<p>![](屏幕截图 2025-06-16 203339.png)</p>
+<p>面向对象程序设计</p>
+<p>定义相同类型对象的结构</p>
+<p>使用变量定义数据域，用方法定义行为</p>
+<p>用类构建对象时会调用构造方法</p>
+<p>访问修饰符：public、abstract、final、缺省</p>
+<p>abstract与final相互对立</p>
+<p>![](屏幕截图 2025-06-15 193658.png)
+![](屏幕截图 2025-06-16 203505.png)
+![](屏幕截图 2025-06-15 193848.png)
+![](屏幕截图 2025-06-16 204151.png)</p>
+<h3 id="构造方法">构造方法
+</h3><p>是一种特殊的方法，调用它来初始化对象。</p>
+<ul>
+<li>
+<p>构造函数是 Java 中用于创建对象时初始化对象的特殊方法，与类名同名，无返回值类型（连<code>void</code>都不能写 ）。</p>
+</li>
+<li>
+<p>构造方法只能在创建对象（<code>new</code>关键字时）自动调用，创建对象的本质就是调用构造函数初始化</p>
+</li>
+<li>
+<p>构造函数名字必须与类名完全相同，否则不是构造函数</p>
+</li>
+<li>
+<p>构造函数没有返回值类型，不能声明<code>int</code>、<code>void</code>等返回值类型</p>
+</li>
+<li>
+<p>构造方法作用就是在创建对象时执行初始化操作（如给属性赋值等 ）</p>
+<p>“书” 是类（抽象概念 ），“某一本书” 是对象（具体实例 ），体现类与对象关系</p>
+<p>电脑类中，品牌、型号、内存大小属于描述电脑的属性（用变量定义 ）</p>
+<p>类是对象的抽象，对象是类的具体体现</p>
+<p>类的结构通常是属性（变量，描述状态 ）和方法（描述行为、操作 ）</p>
+<p>定义一个类，其中需要定义(1) 成员变量 (2) 构造方法 (3) 成员方法</p>
+</li>
+</ul>
+<p>特征：
+名称：与它所属的类名相同</p>
+<p>返回类型：无，且不能用void修饰，因为返回值类型就是该类本身。</p>
+<p><strong>可以不定义构造方法</strong></p>
+<p>Cylinder(){}</p>
+<h3 id="方法重载">方法重载
+</h3><p>函数重载是指在同一个类中，方法名相同，但参数列表（参数个数、类型、顺序 ）不同的多个方法，与返回值无关。</p>
+<p>![](屏幕截图 2025-06-15 194103.png)</p>
+<ul>
+<li>
+<p>参数顺序不同（如<code>func(int, String)</code>和<code>func(String, int)</code> ）</p>
+</li>
+<li>
+<p>参数类型不同（如<code>func(int)</code>和<code>func(String)</code> ）</p>
+</li>
+<li>
+<p>参数名称不同不影响参数列表本质（类型、个数、顺序才决定 ）</p>
+</li>
+<li>
+<p>参数个数不同（如<code>func()</code>和<code>func(int)</code> ），可构成重载</p>
+</li>
+<li>
+<p>返回值不同不能单独构成重载（方法调用时根据参数选方法，返回值不参与判断 ）</p>
+</li>
+</ul>
+<p>重载：在一个类中，如果出现了两个或者以上的同名函数，只要他们的参数的个数，或者参数的类型不同，即可称之为该函数重载了。</p>
+<p>当函数重名时，只看参数列表。和返回值类型没关系。</p>
+<p>重写：重写需要满足方法名同/形参列表同；子类方法返回值类型性比父类方法返回值类型更小或相等/子类方法声明抛出的异常类应比父类方法声明跑出的异常类更小或相等；子类方法的访问权限应比父类方法更大或相等。</p>
+<p>覆盖于被覆盖方法要么都是类方法，要么都是实例方法。</p>
+<h3 id="封装">封装
+</h3><h3 id="可见性修饰符">可见性修饰符
+</h3><p>![](屏幕截图 2025-06-15 194250.png)</p>
+<h4 id="this">this
+</h4><p>this代表对象，就是所在函数所属对象的引用</p>
+<p>this对象</p>
+<h4 id="final">final
+</h4><p>这个关键字是一个修饰符，可以修饰类、方法、变量</p>
+<p>是一个最终类，不可以被继承。</p>
+<p>是一个最终方法，不可以被覆盖</p>
+<p>是一个常量，只能赋值一次。final int MINLEN=10，如果加public，则为public final int</p>
+<h4 id="static">static
+</h4><p>关键字，是一个修饰符，用户修饰成员。（成员变量和成员函数）</p>
+<p>static方法中不能使用this、super关键字。</p>
+<h2 id="继承">继承
+</h2><p>子类继承父类的属性和方法，避免代码重复</p>
+<p>如果父类中没有空参数的构造函数，</p>
+<p>super和this只能有一个，因此</p>
+<h2 id="多态">多态
+</h2><p>toString：将对象变成字符串</p>
+<h2 id="抽象接口">抽象、接口
+</h2><p>接口使用关键字interface定义</p>
+<p>成员变量：public static final</p>
+<p>成员方法：public abstract</p>
+<p>接口中有抽象方法，说明接口不可以实例化</p>
+<p>方法体至少要有一个return语句</p>
+<p>抽象类只能被继承，而且只能单继承，可以定义非抽象方法，子类可以直接继承使用使用的是is a关系，成员修饰符可以自定义</p>
+<p>接口使用的是like a关系，成员修饰符是固定的，全都是public的。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Jun 19, 2025 17:48 &#43;0800
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 冬日晴空
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
