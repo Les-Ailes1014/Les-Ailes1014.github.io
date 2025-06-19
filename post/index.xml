@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>冬日晴空</copyright>
-        <lastBuildDate>Thu, 19 Jun 2025 18:09:58 +0800</lastBuildDate><atom:link href="https://Les-Ailes1014.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 19 Jun 2025 21:46:57 +0800</lastBuildDate><atom:link href="https://Les-Ailes1014.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Java笔记</title>
         <link>https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 19 Jun 2025 17:26:31 +0800</pubDate>
@@ -638,44 +638,190 @@ String()&lt;/p&gt;
 &lt;p&gt;重写：重写需要满足方法名同/形参列表同；子类方法返回值类型性比父类方法返回值类型更小或相等/子类方法声明抛出的异常类应比父类方法声明跑出的异常类更小或相等；子类方法的访问权限应比父类方法更大或相等。&lt;/p&gt;
 &lt;p&gt;覆盖于被覆盖方法要么都是类方法，要么都是实例方法。&lt;/p&gt;
 &lt;h3 id=&#34;封装&#34;&gt;封装
-&lt;/h3&gt;&lt;h3 id=&#34;可见性修饰符&#34;&gt;可见性修饰符
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15194250.png&#34;
-	width=&#34;840&#34;
-	height=&#34;574&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15194250_hu_9900c2cf59b4a928.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15194250_hu_d13d2f1d4b82c685.png 1024w&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619184948.png&#34;
+	width=&#34;1353&#34;
+	height=&#34;740&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619184948_hu_4146c3593f293437.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619184948_hu_1daf98706acd4a29.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;146&#34;
-		data-flex-basis=&#34;351px&#34;
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;438px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;this&#34;&gt;this
 &lt;/h4&gt;&lt;p&gt;this代表对象，就是所在函数所属对象的引用&lt;/p&gt;
-&lt;p&gt;this对象&lt;/p&gt;
-&lt;h4 id=&#34;final&#34;&gt;final
-&lt;/h4&gt;&lt;p&gt;这个关键字是一个修饰符，可以修饰类、方法、变量&lt;/p&gt;
-&lt;p&gt;是一个最终类，不可以被继承。&lt;/p&gt;
-&lt;p&gt;是一个最终方法，不可以被覆盖&lt;/p&gt;
-&lt;p&gt;是一个常量，只能赋值一次。final int MINLEN=10，如果加public，则为public final int&lt;/p&gt;
+&lt;p&gt;this对象&lt;br&gt;&lt;/p&gt;
+&lt;h4 id=&#34;final&#34;&gt;final&lt;br&gt;
+&lt;/h4&gt;&lt;p&gt;这个关键字是一个修饰符，可以修饰类、方法、变量&lt;br&gt;
+是一个最终类，不可以被继承。&lt;br&gt;
+是一个最终方法，不可以被覆盖&lt;br&gt;
+是一个常量，只能赋值一次。final int MINLEN=10，如果加public，则为public final int&lt;br&gt;
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185249.png&#34;
+	width=&#34;1345&#34;
+	height=&#34;530&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185249_hu_90ee4d77f3f0bdee.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185249_hu_bc139ba20b4958ed.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;253&#34;
+		data-flex-basis=&#34;609px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;h4 id=&#34;static&#34;&gt;static
-&lt;/h4&gt;&lt;p&gt;关键字，是一个修饰符，用户修饰成员。（成员变量和成员函数）&lt;/p&gt;
-&lt;p&gt;static方法中不能使用this、super关键字。&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;关键字，是一个修饰符，用户修饰成员。（成员变量和成员函数）&lt;br&gt;
+static方法中不能使用this、super关键字。
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185013.png&#34;
+	width=&#34;1354&#34;
+	height=&#34;377&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185013_hu_5d3231df26a7ff.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185013_hu_a918a1153e5b1e01.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;359&#34;
+		data-flex-basis=&#34;861px&#34;
+	
+&gt;
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185039.png&#34;
+	width=&#34;1332&#34;
+	height=&#34;764&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185039_hu_b1c0a6a0c61d00df.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185039_hu_725f575ce2890396.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;418px&#34;
+	
+&gt;
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185053.png&#34;
+	width=&#34;1349&#34;
+	height=&#34;778&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185053_hu_4308cb16a6503d07.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185053_hu_8b9834218cddd77f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;416px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;继承&#34;&gt;继承
-&lt;/h2&gt;&lt;p&gt;子类继承父类的属性和方法，避免代码重复&lt;/p&gt;
-&lt;p&gt;如果父类中没有空参数的构造函数，&lt;/p&gt;
-&lt;p&gt;super和this只能有一个，因此&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;子类继承父类的属性和方法，避免代码重复&lt;br&gt;
+继承后可以添加新属性和方法&lt;br&gt;
+如果父类中没有空参数的构造函数，&lt;br&gt;
+&lt;strong&gt;提高代码复用性&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;让类与类之间产生关系，提供了另一个特征多态的前提&lt;/strong&gt;&lt;br&gt;
+super和this只能有一个
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185121.png&#34;
+	width=&#34;1385&#34;
+	height=&#34;657&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185121_hu_5d682573620f35a5.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185121_hu_296389809a93d233.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;210&#34;
+		data-flex-basis=&#34;505px&#34;
+	
+&gt;
+所有类的父类都是object类&lt;/p&gt;
 &lt;h2 id=&#34;多态&#34;&gt;多态
-&lt;/h2&gt;&lt;p&gt;toString：将对象变成字符串&lt;/p&gt;
-&lt;h2 id=&#34;抽象接口&#34;&gt;抽象、接口
-&lt;/h2&gt;&lt;p&gt;接口使用关键字interface定义&lt;/p&gt;
-&lt;p&gt;成员变量：public static final&lt;/p&gt;
-&lt;p&gt;成员方法：public abstract&lt;/p&gt;
-&lt;p&gt;接口中有抽象方法，说明接口不可以实例化&lt;/p&gt;
-&lt;p&gt;方法体至少要有一个return语句&lt;/p&gt;
-&lt;p&gt;抽象类只能被继承，而且只能单继承，可以定义非抽象方法，子类可以直接继承使用使用的是is a关系，成员修饰符可以自定义&lt;/p&gt;
-&lt;p&gt;接口使用的是like a关系，成员修饰符是固定的，全都是public的。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;toString：将对象变成字符串&lt;br&gt;
+instanceof&lt;br&gt;
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185510.png&#34;
+	width=&#34;1342&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185510_hu_e791b63686325573.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185510_hu_7e28c6a3ac757d75.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;490px&#34;
+	
+&gt;
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185524.png&#34;
+	width=&#34;1331&#34;
+	height=&#34;808&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185524_hu_28bb98cc65001ac6.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185524_hu_e01893c69708fcc0.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;395px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;抽象&#34;&gt;抽象
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185321.png&#34;
+	width=&#34;1348&#34;
+	height=&#34;619&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185321_hu_b00b222147947427.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185321_hu_d1ecab599e6e0368.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;217&#34;
+		data-flex-basis=&#34;522px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;接口&#34;&gt;接口
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185357.png&#34;
+	width=&#34;1351&#34;
+	height=&#34;774&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185357_hu_b86b326507d0fe2f.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185357_hu_3350353d465eabbf.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;418px&#34;
+	
+&gt;
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185413.png&#34;
+	width=&#34;442&#34;
+	height=&#34;243&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185413_hu_54997c275cd939f9.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185413_hu_198860d6e99d4fa.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;181&#34;
+		data-flex-basis=&#34;436px&#34;
+	
+&gt;
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185447.png&#34;
+	width=&#34;1346&#34;
+	height=&#34;736&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185447_hu_6d215deb8724f3.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185447_hu_1ad0d484f6fc00f3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;438px&#34;
+	
+&gt;
+接口中有抽象方法，说明接口不可以实例化&lt;br&gt;
+方法体至少要有一个return语句&lt;/p&gt;
+&lt;p&gt;抽象类只能被继承，而且只能单继承，可以定义非抽象方法，子类可以直接继承使用使用的是is a关系，成员修饰符可以自定义&lt;br&gt;
+接口使用的是like a关系，成员修饰符是固定的，全都是public的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185612.png&#34;
+	width=&#34;1349&#34;
+	height=&#34;775&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185612_hu_335cd8558873f4b7.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185612_hu_43323112dd79764b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;417px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
