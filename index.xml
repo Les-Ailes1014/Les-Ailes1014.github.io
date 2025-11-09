@@ -514,16 +514,12 @@ String()&lt;/p&gt;
 &lt;p&gt;protected可以在本包下和其子类访问&lt;/p&gt;
 &lt;p&gt;default本包下的当前类和其他类可以访问&lt;/p&gt;
 &lt;p&gt;private只能在当前类下访问。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203339.png&#34;
-	width=&#34;797&#34;
-	height=&#34;329&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203339_hu_2862acb51a838f21.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203339_hu_6c15f92380db2dc6.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203339.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;242&#34;
-		data-flex-basis=&#34;581px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;面向对象程序设计&lt;/p&gt;
@@ -532,52 +528,36 @@ String()&lt;/p&gt;
 &lt;p&gt;用类构建对象时会调用构造方法&lt;/p&gt;
 &lt;p&gt;访问修饰符：public、abstract、final、缺省&lt;/p&gt;
 &lt;p&gt;abstract与final相互对立&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193658.png&#34;
-	width=&#34;812&#34;
-	height=&#34;571&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193658_hu_cabf221774c4dbb4.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193658_hu_b4001a133c0710bc.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193658.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;142&#34;
-		data-flex-basis=&#34;341px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203505.png&#34;
-	width=&#34;810&#34;
-	height=&#34;311&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203505_hu_d2dd7c6061aa5c4b.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203505_hu_785aac926df38670.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203505.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;260&#34;
-		data-flex-basis=&#34;625px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193848.png&#34;
-	width=&#34;838&#34;
-	height=&#34;564&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193848_hu_d560bf74fd4b05b5.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193848_hu_12dd9e0bf82b479b.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193848.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;148&#34;
-		data-flex-basis=&#34;356px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16204151.png&#34;
-	width=&#34;848&#34;
-	height=&#34;328&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16204151_hu_286e4983ba7ee407.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16204151_hu_d6a3a58f8c32e873.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-06-16%20204151.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;258&#34;
-		data-flex-basis=&#34;620px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;构造方法&#34;&gt;构造方法
@@ -611,16 +591,12 @@ String()&lt;/p&gt;
 &lt;p&gt;Cylinder(){}&lt;/p&gt;
 &lt;h3 id=&#34;方法重载&#34;&gt;方法重载
 &lt;/h3&gt;&lt;p&gt;函数重载是指在同一个类中，方法名相同，但参数列表（参数个数、类型、顺序 ）不同的多个方法，与返回值无关。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15194103.png&#34;
-	width=&#34;730&#34;
-	height=&#34;427&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15194103_hu_72d9a8b1cc52f13c.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15194103_hu_d3f1fa941ebbb2a1.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15194103.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;170&#34;
-		data-flex-basis=&#34;410px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -645,16 +621,12 @@ String()&lt;/p&gt;
 &lt;p&gt;重写：重写需要满足方法名同/形参列表同；子类方法返回值类型性比父类方法返回值类型更小或相等/子类方法声明抛出的异常类应比父类方法声明跑出的异常类更小或相等；子类方法的访问权限应比父类方法更大或相等。&lt;/p&gt;
 &lt;p&gt;覆盖于被覆盖方法要么都是类方法，要么都是实例方法。&lt;/p&gt;
 &lt;h3 id=&#34;封装&#34;&gt;封装
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619184948.png&#34;
-	width=&#34;1353&#34;
-	height=&#34;740&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619184948_hu_4146c3593f293437.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619184948_hu_1daf98706acd4a29.png 1024w&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619184948.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;182&#34;
-		data-flex-basis=&#34;438px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;this&#34;&gt;this
@@ -665,55 +637,39 @@ String()&lt;/p&gt;
 是一个最终类，不可以被继承。&lt;br&gt;
 是一个最终方法，不可以被覆盖&lt;br&gt;
 是一个常量，只能赋值一次。final int MINLEN=10，如果加public，则为public final int&lt;br&gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185249.png&#34;
-	width=&#34;1345&#34;
-	height=&#34;530&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185249_hu_90ee4d77f3f0bdee.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185249_hu_bc139ba20b4958ed.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185249.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;253&#34;
-		data-flex-basis=&#34;609px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;static&#34;&gt;static
 &lt;/h4&gt;&lt;p&gt;关键字，是一个修饰符，用户修饰成员。（成员变量和成员函数）&lt;br&gt;
 static方法中不能使用this、super关键字。
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185013.png&#34;
-	width=&#34;1354&#34;
-	height=&#34;377&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185013_hu_5d3231df26a7ff.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185013_hu_a918a1153e5b1e01.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185013.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;359&#34;
-		data-flex-basis=&#34;861px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185039.png&#34;
-	width=&#34;1332&#34;
-	height=&#34;764&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185039_hu_b1c0a6a0c61d00df.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185039_hu_725f575ce2890396.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185039.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;174&#34;
-		data-flex-basis=&#34;418px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185053.png&#34;
-	width=&#34;1349&#34;
-	height=&#34;778&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185053_hu_4308cb16a6503d07.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185053_hu_8b9834218cddd77f.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185053.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;173&#34;
-		data-flex-basis=&#34;416px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;继承&#34;&gt;继承
@@ -723,110 +679,72 @@ static方法中不能使用this、super关键字。
 &lt;strong&gt;提高代码复用性&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;让类与类之间产生关系，提供了另一个特征多态的前提&lt;/strong&gt;&lt;br&gt;
 super和this只能有一个
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185121.png&#34;
-	width=&#34;1385&#34;
-	height=&#34;657&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185121_hu_5d682573620f35a5.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185121_hu_296389809a93d233.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185121.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;210&#34;
-		data-flex-basis=&#34;505px&#34;
 	
 &gt;
 所有类的父类都是object类&lt;/p&gt;
 &lt;h2 id=&#34;多态&#34;&gt;多态
 &lt;/h2&gt;&lt;p&gt;toString：将对象变成字符串&lt;br&gt;
 instanceof&lt;br&gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185510.png&#34;
-	width=&#34;1342&#34;
-	height=&#34;656&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185510_hu_e791b63686325573.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185510_hu_7e28c6a3ac757d75.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185510.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;204&#34;
-		data-flex-basis=&#34;490px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185524.png&#34;
-	width=&#34;1331&#34;
-	height=&#34;808&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185524_hu_28bb98cc65001ac6.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185524_hu_e01893c69708fcc0.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;164&#34;
-		data-flex-basis=&#34;395px&#34;
-	
-&gt;&lt;/p&gt;
+![](&lt;a class=&#34;link&#34; href=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185524.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185524.png&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;抽象&#34;&gt;抽象
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185321.png&#34;
-	width=&#34;1348&#34;
-	height=&#34;619&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185321_hu_b00b222147947427.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185321_hu_d1ecab599e6e0368.png 1024w&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185321.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;217&#34;
-		data-flex-basis=&#34;522px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;接口&#34;&gt;接口
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185357.png&#34;
-	width=&#34;1351&#34;
-	height=&#34;774&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185357_hu_b86b326507d0fe2f.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185357_hu_3350353d465eabbf.png 1024w&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185357.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;174&#34;
-		data-flex-basis=&#34;418px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185413.png&#34;
-	width=&#34;442&#34;
-	height=&#34;243&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185413_hu_54997c275cd939f9.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185413_hu_198860d6e99d4fa.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185413.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;181&#34;
-		data-flex-basis=&#34;436px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185447.png&#34;
-	width=&#34;1346&#34;
-	height=&#34;736&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185447_hu_6d215deb8724f3.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185447_hu_1ad0d484f6fc00f3.png 1024w&#34;
+&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185447.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;182&#34;
-		data-flex-basis=&#34;438px&#34;
 	
 &gt;
 接口中有抽象方法，说明接口不可以实例化&lt;br&gt;
 方法体至少要有一个return语句&lt;/p&gt;
 &lt;p&gt;抽象类只能被继承，而且只能单继承，可以定义非抽象方法，子类可以直接继承使用使用的是is a关系，成员修饰符可以自定义&lt;br&gt;
 接口使用的是like a关系，成员修饰符是固定的，全都是public的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185612.png&#34;
-	width=&#34;1349&#34;
-	height=&#34;775&#34;
-	srcset=&#34;https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185612_hu_335cd8558873f4b7.png 480w, https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/Pastedimage20250619185612_hu_43323112dd79764b.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/Pastedimage20250619185612.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;174&#34;
-		data-flex-basis=&#34;417px&#34;
 	
 &gt;&lt;/p&gt;
 </description>
@@ -837,7 +755,7 @@ instanceof&lt;br&gt;
         <pubDate>Mon, 09 Jun 2025 00:50:57 +0800</pubDate>
         
         <guid>https://Les-Ailes1014.github.io/p/hello-world/</guid>
-        <description>&lt;img src="https://acg.les-ailes1014.xyz//upload/37016225_p0.png" alt="Featured image of post Hello World!" /&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+        <description>&lt;img src="https://acg.les-ailes1014.xyz/upload/37016225_p0.png" alt="Featured image of post Hello World!" /&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;嗚呼 華のように鮮やかに さあ&lt;/p&gt;
 &lt;p&gt;啊 繁花盛放 雍容绚丽 呵&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-error&#34;&gt;
@@ -893,7 +811,7 @@ instanceof&lt;br&gt;
 &lt;p&gt;仍然痛苦挣扎 直至断灭了呼吸&lt;/p&gt;
 &lt;p&gt;いつまでも美しくあれ&lt;/p&gt;
 &lt;p&gt;任凭沧海桑田 必庄严凛然 隽美无二&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz//upload/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg&#34;
 	
 	
 	
@@ -904,7 +822,7 @@ instanceof&lt;br&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz//upload/45691349_p0.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/45691349_p0.jpg&#34;
 	
 	
 	
@@ -1144,7 +1062,7 @@ man!what i can say?manba out!&lt;/p&gt;
         <pubDate>Tue, 03 Jun 2025 16:54:44 +0800</pubDate>
         
         <guid>https://Les-Ailes1014.github.io/p/myfirstblog/</guid>
-        <description>&lt;img src="https://acg.les-ailes1014.xyz//upload/94902597_p0.png" alt="Featured image of post MyFirstBlog" /&gt;&lt;h4 id=&#34;hello-world&#34;&gt;Hello World!
+        <description>&lt;img src="https://acg.les-ailes1014.xyz/upload/94902597_p0.png" alt="Featured image of post MyFirstBlog" /&gt;&lt;h4 id=&#34;hello-world&#34;&gt;Hello World!
 &lt;/h4&gt;&lt;p&gt;男孩在梦中哭泣，女孩将男孩裹在自己抵挡风雪的斗篷中，为他拭去了眼泪。&lt;/p&gt;
 &lt;p&gt;冰冷。断续。呼啸。&lt;/p&gt;
 &lt;p&gt;巨人轻轻讲述一部遥远的史诗&amp;hellip;&amp;hellip;&lt;/p&gt;
@@ -1152,7 +1070,7 @@ man!what i can say?manba out!&lt;/p&gt;
 &lt;p&gt;众魂的呼唤为其和音，男孩的呜咽敲打着节拍。&lt;/p&gt;
 &lt;p&gt;女孩在梦中的酷寒中微微喘息，她捂住了男孩的眼睛，然后闭上了眼。&lt;/p&gt;
 &lt;p&gt;千年前的歌谣仍在他们眼前演绎。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz//upload/54448818_p0_master1200.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://acg.les-ailes1014.xyz/upload/54448818_p0_master1200.jpg&#34;
 	
 	
 	
@@ -1190,7 +1108,9 @@ man!what i can say?manba out!&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;http://103.207.68.205:5244/d/123yunpan/128690559_p0.png?sign=xVV2vCwF85FbC6bb0H4psNrFHQGrLAg0aehat39DUtM=:0&#34;
+![](&lt;a class=&#34;link&#34; href=&#34;https://drive.les-ailes1014.xyz/d/123yunpan/128690559_p0.png?sign=xVV2vCwF85FbC6bb0H4psNrFHQGrLAg0aehat39DUtM=:0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://drive.les-ailes1014.xyz/d/123yunpan/128690559_p0.png?sign=xVV2vCwF85FbC6bb0H4psNrFHQGrLAg0aehat39DUtM=:0&lt;/a&gt;
+&lt;img src=&#34;https://drive.les-ailes1014.xyz/d/123yunpan/50981359_p0.jpg?sign=pWF1lphuqJdR3D63umJoDA6XGDsqcP-BAj_i1hldgLA=:0&#34;
 	
 	
 	
@@ -1198,15 +1118,7 @@ man!what i can say?manba out!&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;http://103.207.68.205:5244/d/123yunpan/50981359_p0.jpg?sign=pWF1lphuqJdR3D63umJoDA6XGDsqcP-BAj_i1hldgLA=:0&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;
-&lt;img src=&#34;http://103.207.68.205:5244/d/123yunpan/illust_59954530_20201025_105101.jpg?sign=Zg_ySC8QfYUTBnV1i_O_NdO7euyG9nWe5pq1stj4QyY=:0&#34;
+&lt;img src=&#34;https://drive.les-ailes1014.xyz/d/123yunpan/illust_59954530_20201025_105101.jpg?sign=Zg_ySC8QfYUTBnV1i_O_NdO7euyG9nWe5pq1stj4QyY=:0&#34;
 	
 	
 	
