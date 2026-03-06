@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>冬日晴空</copyright><atom:link href="https://Les-Ailes1014.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Java笔记</title>
-        <link>https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/</link>
+        <title>Python笔记</title>
+        <link>https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Fri, 06 Mar 2026 22:16:00 +0800</pubDate>
         
-        <guid>https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg" alt="Featured image of post Java笔记" /&gt;&lt;h3 id=&#34;标识符&#34;&gt;标识符
+        <guid>https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg" alt="Featured image of post Python笔记" /&gt;&lt;h3 id=&#34;标识符&#34;&gt;标识符
 &lt;/h3&gt;&lt;p&gt;在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。&lt;br&gt;
 标识符命名规则：&lt;br&gt;
 1.由大写字母、小写字母、数字、下划线、汉字组成&lt;br&gt;
@@ -188,7 +188,7 @@ Dark Flame Master&lt;/p&gt;
         <pubDate>Thu, 19 Jun 2025 17:26:31 +0800</pubDate>
         
         <guid>https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg" alt="Featured image of post Java笔记" /&gt;&lt;h2 id=&#34;概述&#34;&gt;概述
+        <description>&lt;img src="https://home.les-ailes1014.xyz/imgbed/屏幕截图 2025-10-28 203034.png" alt="Featured image of post Java笔记" /&gt;&lt;h2 id=&#34;概述&#34;&gt;概述
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;编译java文件，要使用JDK中的javac.exe工具&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;javac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。&lt;strong&gt;生成了jvm可以识别的字节码文件&lt;/strong&gt;，也就是class文件，也就是java的运行程序&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;运行java程序，要使用JRE&lt;/strong&gt;&lt;/p&gt;
