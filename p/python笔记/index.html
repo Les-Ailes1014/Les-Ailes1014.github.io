@@ -10,7 +10,7 @@
 <meta property='og:description' content="标识符 在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。\n标识符命名规则：\n1.由大写字母、小写字母、数字、下划线、汉字组成\n2.对大小写敏感，不能以数字开头；\n3.中间不能出现空格，长度没有限制。\n从编程角度看：\n">
 <meta property='og:url' content='https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='冬日晴空'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2026-03-06T22:16:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-06T22:29:24&#43;08:00'/><meta property='og:image' content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2026-03-06T22:16:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-06T22:43:54&#43;08:00'/><meta property='og:image' content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
 <meta name="twitter:title" content="Python笔记">
 <meta name="twitter:description" content="标识符 在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。\n标识符命名规则：\n1.由大写字母、小写字母、数字、下划线、汉字组成\n2.对大小写敏感，不能以数字开头；\n3.中间不能出现空格，长度没有限制。\n从编程角度看：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
@@ -233,11 +233,17 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li>
+    <li><a href="#保留字">保留字</a>
       <ol>
-        <li><a href="#标识符">标识符</a></li>
-        <li><a href="#保留字">保留字</a></li>
         <li><a href="#变量与常量">变量与常量</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#数值类型">数值类型</a>
+      <ol>
+        <li><a href="#整数类型">整数类型</a></li>
       </ol>
     </li>
     <li><a href="#任何进制数据转换成十进制-按权展开式">任何进制数据转换成十进制-按权展开式</a>
@@ -322,15 +328,66 @@
     <section class="article-content">
     
     
-    <h3 id="标识符">标识符
-</h3><p>在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。<br>
+    <h1 id="标识符">标识符
+</h1><p>在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。<br>
 标识符命名规则：<br>
 1.由大写字母、小写字母、数字、下划线、汉字组成<br>
 2.对大小写敏感，不能以数字开头；<br>
 3.中间不能出现空格，长度没有限制。<br>
 从编程角度看：</p>
-<h3 id="保留字">保留字
-</h3><p>Python 留着自己用的字符序列，共35个保留字</p>
+<h2 id="保留字">保留字
+</h2><p>Python 留着自己用的字符序列，共35个保留字</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>and</th>
+          <th>as</th>
+          <th>assert</th>
+          <th>async</th>
+          <th>await</th>
+          <th>break</th>
+          <th>class</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>continue</td>
+          <td>def</td>
+          <td>del</td>
+          <td>elif</td>
+          <td>else</td>
+          <td>except</td>
+          <td>False</td>
+      </tr>
+      <tr>
+          <td>finally</td>
+          <td>for</td>
+          <td>from</td>
+          <td>global</td>
+          <td>if</td>
+          <td>import</td>
+          <td>in</td>
+      </tr>
+      <tr>
+          <td>is</td>
+          <td>lambda</td>
+          <td>None</td>
+          <td>nonlocal</td>
+          <td>not</td>
+          <td>or</td>
+          <td>pass</td>
+      </tr>
+      <tr>
+          <td>raise</td>
+          <td>return</td>
+          <td>True</td>
+          <td>try</td>
+          <td>while</td>
+          <td>with</td>
+          <td>yield</td>
+      </tr>
+  </tbody>
+</table></div>
 <h3 id="变量与常量">变量与常量
 </h3><p>变量：Python编程中用来存储数据的最小单元，它有类型、名字、值
 常量：类似数学中的常数，通常情况下，变量的值就是常量。
@@ -338,6 +395,40 @@
 a = 10
 name = &ldquo;张三&rdquo;
 pi = 3.14</p>
+<h1 id="基本数据类型">基本数据类型
+</h1><h2 id="数值类型">数值类型
+</h2><h3 id="整数类型">整数类型
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>进制种类</th>
+          <th>引导符号</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>十进制</td>
+          <td>无</td>
+          <td>默认情况，例：1100，-1100</td>
+      </tr>
+      <tr>
+          <td>二进制</td>
+          <td>0b或0B</td>
+          <td>由字符0和1组成，例：0b1010，0B1010</td>
+      </tr>
+      <tr>
+          <td>八进制</td>
+          <td>0o或0O</td>
+          <td>由字符0和7组成，例：0o1010，0O1010</td>
+      </tr>
+      <tr>
+          <td>十六进制</td>
+          <td>0x或0X</td>
+          <td>由字符0<del>9、a</del>f或A~F组成，例：0x1010，0X1010</td>
+      </tr>
+  </tbody>
+</table></div>
 <h2 id="任何进制数据转换成十进制-按权展开式">任何进制数据转换成十进制-按权展开式
 </h2><p>**二进制-&gt;十进制
 <code>1010 = 1*2^3 + 0*2^2 + 1*2^1 + 0*2^0 = 8+0+2+0 = 10</code></p>
@@ -464,7 +555,7 @@ True False</p>
 
 
         <span>
-            最后更新于 Mar 06, 2026 22:29 &#43;0800
+            最后更新于 Mar 06, 2026 22:43 &#43;0800
         </span>
     </section></footer>
 
