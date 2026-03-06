@@ -10,7 +10,7 @@
 <meta property='og:description' content="概述 编译java文件，要使用JDK中的javac.exe工具\njavac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。生成了jvm可以识别的字节码文件，也就是class文件，也就是java的运行程序\n">
 <meta property='og:url' content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='冬日晴空'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-06-19T17:26:31&#43;08:00'/><meta property='article:modified_time' content='2026-02-21T00:06:09&#43;08:00'/><meta property='og:image' content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-03-06T22:16:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-06T22:18:10&#43;08:00'/><meta property='og:image' content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg' />
 <meta name="twitter:title" content="Java笔记">
 <meta name="twitter:description" content="概述 编译java文件，要使用JDK中的javac.exe工具\njavac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。生成了jvm可以识别的字节码文件，也就是class文件，也就是java的运行程序\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://Les-Ailes1014.github.io/p/java%E7%AC%94%E8%AE%B0/kobe.jpg' />
@@ -233,35 +233,22 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#概述">概述</a></li>
-    <li><a href="#基础知识">基础知识</a></li>
-    <li><a href="#数据类型变量与运算符">数据类型、变量与运算符</a></li>
-    <li><a href="#流程控制">流程控制</a></li>
-    <li><a href="#数组">数组</a></li>
-    <li><a href="#字符串和字符">字符串和字符</a>
+    <li>
       <ol>
-        <li><a href="#string类">String类</a></li>
-        <li><a href="#stringbuffer类">StringBuffer类</a></li>
-        <li><a href="#character类">Character类</a></li>
+        <li><a href="#标识符">标识符</a></li>
+        <li><a href="#保留字">保留字</a></li>
+        <li><a href="#变量与常量">变量与常量</a></li>
       </ol>
     </li>
-    <li><a href="#类">类</a>
+    <li><a href="#任何进制数据转换成十进制-按权展开式">任何进制数据转换成十进制-按权展开式</a>
       <ol>
-        <li><a href="#构造方法">构造方法</a></li>
-        <li><a href="#方法重载">方法重载</a></li>
-        <li><a href="#封装">封装</a>
-          <ol>
-            <li><a href="#this">this</a></li>
-            <li><a href="#final">final<br></a></li>
-            <li><a href="#static">static</a></li>
-          </ol>
-        </li>
+        <li><a href="#浮点类型">浮点类型</a></li>
+        <li><a href="#复数类型">复数类型</a></li>
+        <li><a href="#字符串">字符串</a></li>
+        <li><a href="#布尔类型">布尔类型</a></li>
       </ol>
     </li>
-    <li><a href="#继承">继承</a></li>
-    <li><a href="#多态">多态</a></li>
-    <li><a href="#抽象">抽象</a></li>
-    <li><a href="#接口">接口</a></li>
+    <li><a href="#type函数">type()函数</a></li>
   </ol>
 </nav>
         </div>
@@ -277,12 +264,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/java%E7%AC%94%E8%AE%B0/">
-                <img src="/p/java%E7%AC%94%E8%AE%B0/kobe_hu_84a6e930d1285249.jpg"
-                        srcset="/p/java%E7%AC%94%E8%AE%B0/kobe_hu_84a6e930d1285249.jpg 800w, /p/java%E7%AC%94%E8%AE%B0/kobe_hu_1d86a859ad83529.jpg 1600w"
-                        width="800" 
-                        height="499" 
-                        loading="lazy"
-                        alt="Featured image of post Java笔记" />
+                
+                    <img src="https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg" loading="lazy" alt="Featured image of post Java笔记" />
                 
             </a>
         </div>
@@ -315,7 +298,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jun 19, 2025</time>
+                <time class="article-time--published">Mar 06, 2026</time>
             </div>
         
 
@@ -331,264 +314,35 @@
     <section class="article-content">
     
     
-    <h2 id="概述">概述
-</h2><p><strong>编译java文件，要使用JDK中的javac.exe工具</strong></p>
-<p>javac负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。<strong>生成了jvm可以识别的字节码文件</strong>，也就是class文件，也就是java的运行程序</p>
-<p><strong>运行java程序，要使用JRE</strong></p>
-<p><strong>解释执行</strong>生成的<strong>class</strong>文件，要使用<strong>java.exe</strong>工具，负责运行的部分，会启动jvm，加载运行时所需的类库，并对class文件进行执行。</p>
-<p>一个文件要被执行，必须要有一个执行的起始点，这个起始点就是main函数。</p>
-<p>生成的文件扩展名：.class</p>
-<p>一个java文件中只能有一个public类，但是一个源文件里可以有多个class声明。</p>
-<p>类名必须和文件名一致。</p>
-<p>java虚拟机（JVM）：java程序的运行平台</p>
-<p>java项目的源文件在工程目录下<strong>src</strong>目录中</p>
-<p>编译后生成的<strong>class</strong>文件在<strong>bin</strong>目录中</p>
-<h2 id="基础知识">基础知识
-</h2><p><strong>标识符</strong></p>
-<p>Java符号分为<strong>标识符、关键字、运算符和分隔符</strong></p>
-<p>由<strong>字母、数字、__和$</strong> 组成。</p>
-<p>字母可以是<strong>大写或小写</strong>的英文字母</p>
-<p>数字从<strong>0到9</strong>，长度不限</p>
-<p><strong>第一个字符不能是数字，区分大小写</strong></p>
-<p>最好见名知义，规范大小写使用方式</p>
-<h2 id="数据类型变量与运算符">数据类型、变量与运算符
-</h2><p><strong>命名规则</strong></p>
-<p><strong>变量、方法名用小写字母，多个词组成的名称</strong></p>
-<p>从<strong>第二个词</strong>开始<strong>首字母大写</strong>（小驼峰）</p>
-<p>变量：radius、area   方法：computeArea showInputDialog</p>
-<p><strong>类名</strong>每一个词的首字母大写（驼峰命名法）</p>
-<p>ComputeArea、Math、JOptionPane</p>
-<p><strong>常量名</strong> 所有字母都要大写 每个词<strong>下划线</strong>分割</p>
-<p>PI、MAX_VALUE</p>
-<p><strong>包名</strong>全部用小写</p>
-<p><strong>严格区分大小写</strong>定义类时class不能写成Class</p>
-<p>定义一个computer时，还可定义一个computer</p>
-<p>合法标识符：
-A、al、$Systembol、square、ex_sa</p>
-<p>不合法：
-Ia、break、TWO WORDS、.NO</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/2025-06-15171855.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p>char和string的区别</p>
-<p>char只能表示单字符，使用单引号包裹</p>
-<p>string需要用双引号包裹</p>
-<p><strong>变量</strong></p>
-<p>在Java中，所有变量必须先定义后使用</p>
-<p>格式为：</p>
-<p>数据类型 标识符1 [=初值],[标识符2&hellip;];</p>
-<p>int i = 0, j = 1;</p>
-<p><strong>变量要先定义/声明，再初始化，才能使用</strong></p>
-<p>System.out.println(&ldquo;字符串&rdquo;+变量+&hellip;&hellip;);</p>
-<p><strong>&quot;+&ldquo;用作算数运算符和字符串连接运算符</strong>，若其中某个操作数不是字符串，在连接之前会<strong>自动将其转换为字符串</strong></p>
-<p>System.out.println(&ldquo;i+j is&rdquo;+ i + j);</p>
-<p>System.out.println(&ldquo;i+j is&rdquo;+ (i + j));</p>
-<p><strong>常量</strong></p>
-<p>运行过程中<strong>只被赋值一次</strong>，不会变化</p>
-<p>1.以字面形式给出值的<strong>常数值</strong></p>
-<p>2.以关键字<strong>final</strong>定义的<strong>标识符常量</strong></p>
-<p>如final double PI = 3.1415;</p>
-<p>有整数型、浮点型、布尔型、字符型和字符串型5种常量。</p>
-<p><strong>常数值</strong></p>
-<p><strong>整形</strong>常数缺省类型为int</p>
-<p>默认情况下，<strong>整形常数值为十进制整数</strong></p>
-<p><strong>八进制</strong>常数以0开头，后跟0~7数字，如035</p>
-<p><strong>十六进制</strong>常数以0x开头，后跟0<del>9数字，或者a</del>f之间的小写或大写字母，如0x2f</p>
-<p><strong>浮点型常数值</strong>：double双精度(默认) 、float单精度</p>
-<p>浮点数的计算是近似计算，因此doluble类型比float类型更加准确</p>
-<p><strong>布尔型常数值（逻辑型常量）</strong></p>
-<p>有<strong>true</strong>和<strong>false</strong>两个值</p>
-<p><strong>字符型常数值</strong></p>
-<p><strong>包</strong>
-定义包用package关键字。</p>
-<p>package pack; 定义了一个包，名称为pack</p>
-<p>类的全名称时 包名.类名</p>
-<p>包是一种封装形式，用于包装类，想要被包以外的程序访问，该类必须public</p>
-<p>类中的成员，如果被包以外访问，也必须public</p>
-<p><strong>import - 导入</strong></p>
-<p>导入指定包中的类</p>
-<p><code>import packa.* ; //导入了packa当前目录下所有的类，不包含子包</code></p>
-<p><code>import packa.abc.*; //导入了packa包中的子包abc下的当前所有类</code></p>
-<p><code>java.lang：自动被导入</code></p>
-<p><code>java.awt：图形界面开发</code></p>
-<p><code>java.swing：图形界面库</code></p>
-<p><code>java.net：网络编程</code></p>
-<p><code>java.io：用于操作文件</code></p>
-<p><code>java.util：工具包、事件对象、集合框架</code></p>
-<p><code>java.applet：客户端java小程序</code></p>
-<p><strong>数据类型转换</strong></p>
-<p><strong>自动</strong>：转换前后类型兼容，转换后范围大于转换前，</p>
-<p><strong>强制</strong>：i = float j，容易丢失精度，转换数值不能超过目标类型的数值范围，如float&lt;double，不满足自动转换条件</p>
-<p><strong>运算符</strong></p>
-<p>规定表达式中各变量和常量运算的符号。</p>
-<p><strong>算数运算符</strong>：+ - * / %，除数不能为零，整数相除结果只有整数部分。2/3=0，9.0%2.0=1.0</p>
-<p><strong>关系运算符</strong>：== ，！=， &gt;=，=&lt;，&gt;，&lt;。<strong>运算结果为布尔值</strong></p>
-<p><strong>逻辑运算符</strong>：非!、与&amp;&amp;、或||，异或^</p>
-<p><strong>赋值运算</strong>：=以及扩展赋值运算符</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">x</span><span class="o">*=</span><span class="n">y</span><span class="o">+</span><span class="n">10</span><span class="w"> </span><span class="n">相当于</span><span class="w"> </span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="n">y</span><span class="o">+</span><span class="n">10</span><span class="p">)</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="n">x</span><span class="o">+=</span><span class="n">y</span><span class="o">+</span><span class="n">10</span><span class="w"> </span><span class="n">相当于</span><span class="w"> </span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="o">+</span><span class="n">10</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>判断奇数和偶数</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="n">30</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="n">2</span><span class="o">!=</span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="c1">//或 n%2==1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;变量n是奇数&#34;</span><span class="p">);</span><span class="c1">//注意：函数println是有换行，print()无换行</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="k">else</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;变量n是偶数&#34;</span><span class="p">);</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>判断是否被x整除</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">n</span><span class="o">%</span><span class="n">x</span><span class="o">==</span><span class="n">0</span><span class="w"> </span><span class="c1">//判断一个数是否被x整除</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="n">5</span><span class="o">==</span><span class="n">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">n</span><span class="o">%</span><span class="n">8</span><span class="o">==</span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="c1">//判断一个数是否被5或8整除</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="n">5</span><span class="o">==</span><span class="n">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">n</span><span class="o">%</span><span class="n">8</span><span class="o">==</span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="c1">//判断一个数是否同时被5和8整除</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>在 Java 里，<code>/</code> 是<strong>除法运算符</strong>，<code>%</code> 是<strong>取余（模）运算符</strong>，核心区别如下：</p>
-<ul>
-<li>
-<p><strong>运算目的</strong>：</p>
-</li>
-<li>
-<p><code>\</code> 计算<strong>商</strong>，整数相除会向下取整（如 <code>10 / 3 = 3</code> ）；若有浮点数参与，结果含小数（如 <code>10.0 / 3 = 3.333...</code> ）。 -</p>
-</li>
-<li>
-<p><code>%</code> 计算<strong>余数</strong>，返回被除数除以除数后剩余的数（如 <code>10 % 3 = 1</code> ，即 10 除以 3 商 3 余 1 ）。</p>
-</li>
-<li>
-<p><strong>使用场景</strong>： <code>\</code> 用于普通除法需求（如均分物品、计算比例 ）； - <code>%</code> 常用在判断奇偶（<code>x % 2 == 0</code> 为偶数 ）、循环取索引（如数组遍历控制 ）等场景。 简单说，<code>/</code> 求“能分几份”，<code>%</code> 求“分完剩下多少” 。</p>
-</li>
-</ul>
-<p><strong>ASCII字符</strong>：</p>
-<p>48~57：0-9</p>
-<p>65~90：A-Z</p>
-<p>97~122：a-z</p>
-<h2 id="流程控制">流程控制
-</h2><p><img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-06-15%20184544.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p>while do循环：先执行语句块再判断条件</p>
-<p>for each循环：将字符串orders中的每个元素赋值给order，使用order.equals语句进行比较，相同之后break终止</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/08125e41-abd1-4f7a-941e-0e55aa31d5b6.jpg"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p>每10个数换行。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="o">=</span><span class="n">0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="k">do</span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">条件2</span><span class="p">){</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">输出满足条件2的数</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">%</span><span class="n">10</span><span class="o">==</span><span class="n">0</span><span class="p">){</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="n">条件1</span><span class="p">)</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>Scanner库</p>
-<p>导入：import java.util.Scanner;</p>
-<p>创建对象：Scanner scanner = new Scanner(System.in);</p>
-<ul>
-<li>
-<p><code>new Scanner(...)</code>：创建 <code>Scanner</code> 对象，专门处理输入；</p>
-</li>
-<li>
-<p><code>System.in</code>：把 <code>Scanner</code> 绑定到 “控制台输入”，这样输入会从键盘读。</p>
-</li>
-<li>
-<p><code>nextLine()</code>：读一整行字符串（含空格）</p>
-</li>
-</ul>
-<h2 id="数组">数组
-</h2><p><strong>概念</strong>：<strong>相同数据类型</strong>的元素<strong>按一定顺序</strong>排列的集合，<strong>可以为简单数据类型，也可以为对象</strong>。</p>
-<p><strong>主要特点</strong>：各元素<strong>有先后顺序</strong>，按照这个先后顺序<strong>连续存放</strong>在一起。数据元素用整合数组的名字和他自己在数组中的顺序位置来表示，a[0]表示名字为a的数组中的<strong>第一个元素</strong>，a[1]代表数组a的第二个元素，以此类推</p>
-<p>使用new，要表明数组的长度：</p>
-<p>定义长度是5的数组，类型为char、boolean、String</p>
-<p>char[] arrar = new char[5];</p>
-<p>boolean[] array1 = new boolean[5];</p>
-<p>String[] array2 = new String[5]</p>
-<p>数组大小：array.length;</p>
-<p>array1[0] = 30;</p>
-<p>int i=0,count=0; 同类型变量，可以只写一次类型</p>
-<p>for(i=0; i &lt; array1.length;i++)</p>
-<p>或</p>
-<p>for(i=0; i &lt;= array1.length;i++)</p>
-<p>if(array1[i] &gt; 50)</p>
-<p>count++;</p>
-<p>类的构造方法、访问对象的成员、调用对象的成员方法、方法要先定义后调用</p>
-<p>为要创建的对象中成员变量赋初始值</p>
-<p>访问对象中的成员变量，使用“对象名.成员变量名”。</p>
-<p>class A{}</p>
-<p><strong>一维数组</strong></p>
-<p>格式为：</p>
-<p>`数组类型[] 数组名 或 数组类型 数组名[]</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15190906.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p>声明（等号左边）：</p>
-<p>`数组类型[] 数组名;</p>
-<p>`数据类型 数组名[];</p>
-<p>创建（等号右边）：</p>
-<p><code>数组名[数组长度];</code></p>
-<p><code>数组名[]{元素1,元素2,元素3...};</code></p>
-<p><code>{元素1,元素2,元素3...};</code></p>
-<p><strong>foreach循环</strong></p>
-<p>for(元素类型 元素变量:数组/集合) {}</p>
+    <h3 id="标识符">标识符
+</h3><p>在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。<br>
+标识符命名规则：<br>
+1.由大写字母、小写字母、数字、下划线、汉字组成<br>
+2.对大小写敏感，不能以数字开头；<br>
+3.中间不能出现空格，长度没有限制。<br>
+从编程角度看：</p>
+<h3 id="保留字">保留字
+</h3><p>Python 留着自己用的字符序列，共35个保留字</p>
+<h3 id="变量与常量">变量与常量
+</h3><p>变量：Python编程中用来存储数据的最小单元，它有类型、名字、值
+常量：类似数学中的常数，通常情况下，变量的值就是常量。
+例：
+a = 10
+name = &ldquo;张三&rdquo;
+pi = 3.14</p>
+<h2 id="任何进制数据转换成十进制-按权展开式">任何进制数据转换成十进制-按权展开式
+</h2><p>**二进制-&gt;十进制
+<code>1010 = 1*2^3 + 0*2^2 + 1*2^1 + 0*2^0 = 8+0+2+0 = 10</code></p>
+<p>**八进制-&gt;十进制
+<code>167 = 1*8^2 + 6*8^1 + 7*8^0 = 64+48+7 = 119</code></p>
+<p><strong>十六进制-&gt;十进制</strong>
+<code>24B = 2*16^2 + 4*16^1 + 11*16^0 = 512+64+11 = 587</code>
+<code>B = 11</code></p>
+<h3 id="浮点类型">浮点类型
+</h3><p>普通浮点数：
+1.23 3.14 5.19</p>
+<p>科学计数法浮点数：
+1.01e4   -1.2e5</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -601,131 +355,66 @@ Ia、break、TWO WORDS、.NO</p>
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">5</span><span class="p">,</span><span class="w"> </span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">15</span><span class="p">};</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">num</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">sum</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 30</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="n">答案</span><span class="err">：</span><span class="kt">int</span><span class="err">，</span><span class="n">numbers</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">f1</span> <span class="o">=</span> <span class="mf">1.23</span> <span class="c1"># 将浮点数1.23赋值给变量f1</span>
+</span></span><span class="line"><span class="cl"><span class="n">f2</span> <span class="o">=</span> <span class="mf">1.01e4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">f1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">---</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.23</span>
+</span></span><span class="line"><span class="cl"><span class="mf">10100.0</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div><p>作用：遍历数组numbers中的所有元素</p>
-<p><strong>length变量</strong></p>
-<p>数组名.length</p>
-<p>用于获取数组的长度。</p>
+</div><h3 id="复数类型">复数类型
+</h3><p>复数a+bj，其中a是实数部分，简称实部，b是虚数部分，简称虚部。
+虚数部分通过后缀“J”
+j=-1^1/2</p>
+<p>对于复数z，可以使用z.real和z.imag来表示它们的实数部分和虚数部分</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">5</span><span class="p">,</span><span class="w"> </span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">15</span><span class="p">};</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="c1">// 用“数组名.length”获取长度</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">len</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 3（数组有 3 个元素）</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">12</span> <span class="o">+</span> <span class="mi">5</span><span class="n">j</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">real</span><span class="p">)</span> <span class="c1">#获取变量a的实数部分</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span> <span class="c1">#获取变量a的虚数部分</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div><p>Java数组的元素类型既可以是基本数据类型（简单数据类型），也可以是引用类型（对象类型）。</p>
-<p>例如：</p>
-<p>1、int[]、char[]、double[] 等，直接存储基本类型的值。</p>
-<p>int[] numbers = {1, 2, 3};  // 存储基本类型int的值</p>
-<p>2、String[]、Object[] 或自定义类的数组，存储的是对象的引用（内存地址），而非对象本身。</p>
-<p>String[] names = {&ldquo;Alice&rdquo;, &ldquo;Bob&rdquo;};  // 存储String对象的引用</p>
-<p><strong>数组查找</strong>：</p>
-<p><strong>线性查找法</strong>：</p>
-<p>将要查找的关键元素key顺序的与数组中的每一个元素进行比较</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15192108.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p><strong>二分查找法</strong>：</p>
-<p>前提是数组中的元素必须已经被排好序</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15192050.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p><strong>数组排序：</strong></p>
-<p><strong>冒泡排序法</strong></p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15192345.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p><strong>二维数组</strong></p>
-<p>类型标识符 数组名[][]</p>
-<p>数组名[]</p>
-<p>类型标识符[],[] 数组名</p>
-<p>例：</p>
-<p>`int arr[][];</p>
-<p>`int[]arr[];</p>
-<p>`int[][] arr;</p>
-<h2 id="字符串和字符">字符串和字符
-</h2><h3 id="string类">String类
-</h3><p><strong>创建方法</strong>
-String()</p>
-<p>String(char[] chararray)</p>
-<p>String(char[] chararray,int offset, int count)</p>
-<p>public int indexOf (String value, int startIndex)</p>
-<p>在字符串中从startIndex开始查找子串value，返回从 <code>beginIndex</code> 开始到串尾的子串，正确。</p>
-<p>public int indexOf (char c)
-查找字符 <code>c</code> </p>
-<p>public String subString(int fromIndex, int endIndex)</p>
-<p>返回从 <code>beginIndex</code> 开始到 <code>endIndex - 1</code> 的子串，不是到 <code>endIndex</code>。</p>
-<p>public char chatAt(int index)</p>
-<p>是获取指定索引的字符，不符合。</p>
-<p>String是引用数据类型，本质是类，而非基本数据类型</p>
-<p>字符串获取长度用length()方法<code>&quot;abc&quot;.length()</code></p>
-<p>数组获取长度用 <code>length</code> 属性<code>int[] arr = {1,2}; arr.length</code></p>
-<h3 id="stringbuffer类">StringBuffer类
-</h3><p><code>StringBuffer</code> 是 Java 提供的<strong>可变字符串类</strong>（还有类似的 <code>StringBuilder</code> ），存放在 <code>java.lang</code> 包中。</p>
-<ul>
-<li>
-<p><strong>特点</strong>：<br>
-字符串内容可以被修改（append、insert 等操作直接改原对象 ），不像 <code>String</code> 是 “不可变” 的（每次修改都会新建对象 ）。</p>
-</li>
-<li>
-<p><strong>用途</strong>：<br>
-当需要频繁拼接、修改字符串时（比如循环里拼接），用 <code>StringBuffer</code> 更高效，避免创建大量临时 <code>String</code> 对象。</p>
+</div><h3 id="字符串">字符串
+</h3><p>双引号括起来的字符串：
+&ldquo;HelloWorld&rdquo;
+单引号括起来的字符串：
+&lsquo;Hello&rsquo;</p>
+<p>一堆三个单引号括起来的字符串：
+&lsquo;&lsquo;&lsquo;Hello大家好啊，
+这里可以换行
+&rsquo;&rsquo;&rsquo;</p>
+<p>一堆三个双引号括起来的字符串：
+&ldquo;&ldquo;&ldquo;Hello大家好啊，
+这里可以换行
+&quot;&rdquo;&rdquo;</p>
+<h3 id="布尔类型">布尔类型
+</h3><p>通常用来做逻辑判断
+True False</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">StringBuffer</span><span class="w"> </span><span class="n">sb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StringBuffer</span><span class="p">(</span><span class="s">&#34;Hello&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="n">sb</span><span class="p">.</span><span class="na">setCharAt</span><span class="p">(</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="n">sb</span><span class="p">.</span><span class="na">reverse</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">sb</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">2</span><span class="p">));</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div></li>
-</ul>
-<ol>
-<li>
-<p>sb.setCharAt(1, &lsquo;a&rsquo;) 将字符串变为 &ldquo;Hallo&rdquo;。 </p>
-</li>
-<li>
-<p>sb.reverse() 反转后字符串变为 &ldquo;ollaH&rdquo;。 </p>
-</li>
-<li>
-<p>charAt(2) 获取索引为2的字符 l。</p>
+</div><h2 id="type函数">type()函数
+</h2><p>可以用来识别某个变量或常量的数据类型
+整数：&lt;class &lsquo;int&rsquo;&gt;
+浮点数：&lt;class &lsquo;float&rsquo;&gt;
+复数：&lt;class &lsquo;complex&rsquo;&gt;
+字符串：&lt;class &lsquo;str&rsquo;&gt;
+布尔类型：&lt;class &lsquo;bool&rsquo;&gt;</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -734,303 +423,17 @@ String()</p>
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">StringTest</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;hello&#34;</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;hello&#34;</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">s3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">(</span><span class="s">&#34;hello&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">s2</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">s3</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">       </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">123</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="mf">3.14</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">2</span><span class="n">j</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="s2">&#34;大家好&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">),</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">),</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">),</span><span class="nb">type</span><span class="p">(</span><span class="n">d</span><span class="p">),</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div><p>s2为<strong>常量池中的字符串对象</strong>，节省内存</p>
-<p>s3是<strong>堆内存中的新对象</strong>，是强制在堆内存新建的对象（内存地址不同 ）。</p>
-</li>
-</ol>
-<p><strong>concat方法</strong>
-拼接字符串，返回<strong>新的 <code>String</code> 对象</strong>（原 <code>String</code> 不会被修改，因为 <code>String</code> 是不可变的 ）。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Hello&#34;</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="c1">// concat 返回新对象，但没赋值给 s1，所以 s1 还是原来的 &#34;Hello&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="n">s1</span><span class="p">.</span><span class="na">concat</span><span class="p">(</span><span class="s">&#34; World&#34;</span><span class="p">);</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 &#34;Hello&#34;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>append方法</strong>
-直接修改 <code>StringBuffer</code> 对象本身，在末尾拼接内容，<strong>不会新建对象</strong>（因为 <code>StringBuffer</code> 是可变的 ）。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">StringBuffer</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StringBuffer</span><span class="p">(</span><span class="s">&#34;Hello&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="c1">// append 直接修改 s2，拼接后 s2 变成 &#34;Hello World&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="n">s2</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">&#34; World&#34;</span><span class="p">);</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s2</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 &#34;Hello World&#34;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="character类">Character类
-</h3><h2 id="类">类
-</h2><p>由成员变量和成员方法组成。</p>
-<p>类是对象的抽象</p>
-<p>类是对象的模板，对象是类的实例。</p>
-<p>成员变量用于存储对象的状态，成员方法</p>
-<p>访问修饰符：包括public、private、protected和默认访问权限，只能同一包</p>
-<p>public拥有最大的权限，可以在本项目的任意类中访问</p>
-<p>protected可以在本包下和其子类访问</p>
-<p>default本包下的当前类和其他类可以访问</p>
-<p>private只能在当前类下访问。</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203339.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p>面向对象程序设计</p>
-<p>定义相同类型对象的结构</p>
-<p>使用变量定义数据域，用方法定义行为</p>
-<p>用类构建对象时会调用构造方法</p>
-<p>访问修饰符：public、abstract、final、缺省</p>
-<p>abstract与final相互对立</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193658.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-<img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-16203505.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-<img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15193848.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-<img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-06-16%20204151.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h3 id="构造方法">构造方法
-</h3><p>是一种特殊的方法，调用它来初始化对象。</p>
-<ul>
-<li>
-<p>构造函数是 Java 中用于创建对象时初始化对象的特殊方法，与类名同名，无返回值类型（连<code>void</code>都不能写 ）。</p>
-</li>
-<li>
-<p>构造方法只能在创建对象（<code>new</code>关键字时）自动调用，创建对象的本质就是调用构造函数初始化</p>
-</li>
-<li>
-<p>构造函数名字必须与类名完全相同，否则不是构造函数</p>
-</li>
-<li>
-<p>构造函数没有返回值类型，不能声明<code>int</code>、<code>void</code>等返回值类型</p>
-</li>
-<li>
-<p>构造方法作用就是在创建对象时执行初始化操作（如给属性赋值等 ）</p>
-<p>“书” 是类（抽象概念 ），“某一本书” 是对象（具体实例 ），体现类与对象关系</p>
-<p>电脑类中，品牌、型号、内存大小属于描述电脑的属性（用变量定义 ）</p>
-<p>类是对象的抽象，对象是类的具体体现</p>
-<p>类的结构通常是属性（变量，描述状态 ）和方法（描述行为、操作 ）</p>
-<p>定义一个类，其中需要定义(1) 成员变量 (2) 构造方法 (3) 成员方法</p>
-</li>
-</ul>
-<p>特征：
-名称：与它所属的类名相同</p>
-<p>返回类型：无，且不能用void修饰，因为返回值类型就是该类本身。</p>
-<p><strong>可以不定义构造方法</strong></p>
-<p>Cylinder(){}</p>
-<h3 id="方法重载">方法重载
-</h3><p>函数重载是指在同一个类中，方法名相同，但参数列表（参数个数、类型、顺序 ）不同的多个方法，与返回值无关。</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2025-06-15194103.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<ul>
-<li>
-<p>参数顺序不同（如<code>func(int, String)</code>和<code>func(String, int)</code> ）</p>
-</li>
-<li>
-<p>参数类型不同（如<code>func(int)</code>和<code>func(String)</code> ）</p>
-</li>
-<li>
-<p>参数名称不同不影响参数列表本质（类型、个数、顺序才决定 ）</p>
-</li>
-<li>
-<p>参数个数不同（如<code>func()</code>和<code>func(int)</code> ），可构成重载</p>
-</li>
-<li>
-<p>返回值不同不能单独构成重载（方法调用时根据参数选方法，返回值不参与判断 ）</p>
-</li>
-</ul>
-<p>重载：在一个类中，如果出现了两个或者以上的同名函数，只要他们的参数的个数，或者参数的类型不同，即可称之为该函数重载了。</p>
-<p>当函数重名时，只看参数列表。和返回值类型没关系。</p>
-<p>重写：重写需要满足方法名同/形参列表同；子类方法返回值类型性比父类方法返回值类型更小或相等/子类方法声明抛出的异常类应比父类方法声明跑出的异常类更小或相等；子类方法的访问权限应比父类方法更大或相等。</p>
-<p>覆盖于被覆盖方法要么都是类方法，要么都是实例方法。</p>
-<h3 id="封装">封装
-</h3><p><img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619184948.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h4 id="this">this
-</h4><p>this代表对象，就是所在函数所属对象的引用</p>
-<p>this对象<br></p>
-<h4 id="final">final<br>
-</h4><p>这个关键字是一个修饰符，可以修饰类、方法、变量<br>
-是一个最终类，不可以被继承。<br>
-是一个最终方法，不可以被覆盖<br>
-是一个常量，只能赋值一次。final int MINLEN=10，如果加public，则为public final int<br>
-<img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185249.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h4 id="static">static
-</h4><p>关键字，是一个修饰符，用户修饰成员。（成员变量和成员函数）<br>
-static方法中不能使用this、super关键字。
-<img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185013.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-<img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185039.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-<img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185053.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h2 id="继承">继承
-</h2><p>子类继承父类的属性和方法，避免代码重复<br>
-继承后可以添加新属性和方法<br>
-如果父类中没有空参数的构造函数，<br>
-<strong>提高代码复用性</strong><br>
-<strong>让类与类之间产生关系，提供了另一个特征多态的前提</strong><br>
-super和this只能有一个
-<img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185121.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-所有类的父类都是object类</p>
-<h2 id="多态">多态
-</h2><p>toString：将对象变成字符串<br>
-instanceof<br>
-<img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185510.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-![](<a class="link" href="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185524.png"  target="_blank" rel="noopener"
-    >https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185524.png</a></p>
-<h2 id="抽象">抽象
-</h2><p><img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185321.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h2 id="接口">接口
-</h2><p><img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185357.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-<img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185413.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-<img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185447.png"
-	
-	
-	
-	loading="lazy"
-	
-	
->
-接口中有抽象方法，说明接口不可以实例化<br>
-方法体至少要有一个return语句</p>
-<p>抽象类只能被继承，而且只能单继承，可以定义非抽象方法，子类可以直接继承使用使用的是is a关系，成员修饰符可以自定义<br>
-接口使用的是like a关系，成员修饰符是固定的，全都是public的。</p>
-<p><img src="https://home.les-ailes1014.xyz/imgbed/Pastedimage20250619185612.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-
 </section>
 
 
@@ -1047,7 +450,7 @@ instanceof<br>
 
 
         <span>
-            最后更新于 Feb 21, 2026 00:06 &#43;0800
+            最后更新于 Mar 06, 2026 22:18 &#43;0800
         </span>
     </section></footer>
 
