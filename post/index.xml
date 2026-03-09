@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>冬日晴空</copyright>
-        <lastBuildDate>Mon, 09 Mar 2026 19:17:57 +0800</lastBuildDate><atom:link href="https://Les-Ailes1014.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 09 Mar 2026 19:21:04 +0800</lastBuildDate><atom:link href="https://Les-Ailes1014.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Python笔记</title>
         <link>https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Fri, 06 Mar 2026 22:16:00 +0800</pubDate>
@@ -728,12 +728,16 @@ Happy new year!&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;语句块&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/de5183ec50b4456b962341ee65852a96.png~tplv-a9rns2rl98-image.png%7c150&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/de5183ec50b4456b962341ee65852a96.png~tplv-a9rns2rl98-image.png&#34;
+	width=&#34;462&#34;
+	height=&#34;616&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/de5183ec50b4456b962341ee65852a96.png~tplv-a9rns2rl98-image_hu_e3e6158b0abf2b6d.png 480w, https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/de5183ec50b4456b962341ee65852a96.png~tplv-a9rns2rl98-image_hu_30b62aa1b39a7d69.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -785,12 +789,16 @@ Happy new year!&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;语句块2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/d3bcbb5d-0c93-4f19-8145-3e2929e0e4e2.jpg%7c200&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/d3bcbb5d-0c93-4f19-8145-3e2929e0e4e2.jpg&#34;
+	width=&#34;777&#34;
+	height=&#34;593&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/d3bcbb5d-0c93-4f19-8145-3e2929e0e4e2_hu_e36f7c57dc128434.jpg 480w, https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/d3bcbb5d-0c93-4f19-8145-3e2929e0e4e2_hu_cd7028a2e9573741.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;314px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -862,12 +870,16 @@ Happy new year!&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;语句块N&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/0a89af19-8fac-4462-bda8-240ee45c0c61.jpg%7c220&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/0a89af19-8fac-4462-bda8-240ee45c0c61.jpg&#34;
+	width=&#34;770&#34;
+	height=&#34;732&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/0a89af19-8fac-4462-bda8-240ee45c0c61_hu_6c6c69f6b745f37e.jpg 480w, https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/0a89af19-8fac-4462-bda8-240ee45c0c61_hu_57d5a3d8efd96959.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;105&#34;
+		data-flex-basis=&#34;252px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -922,29 +934,41 @@ Happy new year!&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;俺不中嘞&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/5c05afba-8cd2-42b0-a6a5-dc65cd3349f5.jpg%7c250&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/5c05afba-8cd2-42b0-a6a5-dc65cd3349f5.jpg&#34;
+	width=&#34;557&#34;
+	height=&#34;205&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/5c05afba-8cd2-42b0-a6a5-dc65cd3349f5_hu_738500718f3c0c74.jpg 480w, https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/5c05afba-8cd2-42b0-a6a5-dc65cd3349f5_hu_2d7e5f3a9e35d019.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;271&#34;
+		data-flex-basis=&#34;652px&#34;
 	
 &gt;
-&lt;img src=&#34;https://Les-Ailes1014.github.io/0dae79a3-f3d0-469d-ab09-e950d363a2c0.jpg%7c300&#34;
-	
-	
-	
+&lt;img src=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/0dae79a3-f3d0-469d-ab09-e950d363a2c0.jpg&#34;
+	width=&#34;758&#34;
+	height=&#34;406&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/0dae79a3-f3d0-469d-ab09-e950d363a2c0_hu_5471609f024082c8.jpg 480w, https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/0dae79a3-f3d0-469d-ab09-e950d363a2c0_hu_343a5477b6d758ca.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;186&#34;
+		data-flex-basis=&#34;448px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;循环结构&#34;&gt;循环结构
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/ce55c397-4035-4aec-a328-bcd2a65d5977.jpg%7c200&#34;
-	
-	
-	
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/ce55c397-4035-4aec-a328-bcd2a65d5977.jpg&#34;
+	width=&#34;795&#34;
+	height=&#34;519&#34;
+	srcset=&#34;https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/ce55c397-4035-4aec-a328-bcd2a65d5977_hu_9cdf93908650740e.jpg 480w, https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/ce55c397-4035-4aec-a328-bcd2a65d5977_hu_9d4ff4325712cde5.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;367px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
