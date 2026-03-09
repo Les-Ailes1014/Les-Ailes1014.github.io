@@ -10,7 +10,7 @@
 <meta property='og:description' content="标识符 在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。\n标识符命名规则：\n1.由大写字母、小写字母、数字、下划线、汉字组成\n2.对大小写敏感，不能以数字开头；\n">
 <meta property='og:url' content='https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='冬日晴空'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2026-03-06T22:16:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-08T21:49:04&#43;08:00'/><meta property='og:image' content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2026-03-06T22:16:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-09T18:20:17&#43;08:00'/><meta property='og:image' content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
 <meta name="twitter:title" content="Python笔记">
 <meta name="twitter:description" content="标识符 在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。\n标识符命名规则：\n1.由大写字母、小写字母、数字、下划线、汉字组成\n2.对大小写敏感，不能以数字开头；\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
@@ -263,8 +263,15 @@
         <li><a href="#运算符-赋值运算符增强赋值操作符">运算符-赋值运算符、增强赋值操作符</a></li>
         <li><a href="#运算符-关系运算符">运算符-关系运算符</a></li>
         <li><a href="#运算符-逻辑运算符">运算符-逻辑运算符</a></li>
+        <li><a href="#input函数">input()函数</a></li>
       </ol>
     </li>
+  </ol>
+
+  <ol>
+    <li><a href="#分支结构">分支结构</a></li>
+    <li><a href="#单分支结构if">单分支结构：if</a></li>
+    <li><a href="#二分支结构if-else">二分支结构：if-else</a></li>
   </ol>
 </nav>
         </div>
@@ -961,6 +968,118 @@
       </tr>
   </tbody>
 </table></div>
+<h3 id="input函数">input()函数
+</h3><p>用来接收键盘输入的内容，接收的内容<strong>默认为字符串类型</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 由键盘接收一个年龄</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请您输入年龄：&#34;</span><span class="p">)</span><span class="c1"># 接收键盘输入的内容并赋值给变量age</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;年龄为：&#34;</span> <span class="o">+</span> <span class="n">age</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 将接收到的年龄进行加10计算并输出，并赋值给变量age_new</span>
+</span></span><span class="line"><span class="cl"><span class="n">age_new</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="mi">10</span> <span class="c1"># 默认使用input函数接收的值为str字符串类型，如果要进行运算，需要转换成整数类型</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;计算的年龄为：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age_new</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">---</span>
+</span></span><span class="line"><span class="cl"><span class="n">请您输入年龄</span><span class="err">：</span><span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">年龄为</span><span class="err">：</span><span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">str</span><span class="s1">&#39;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="n">计算的年龄为</span><span class="err">：</span><span class="mi">30</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>1.下面代码的输出结果是
+x = 10
+y = 4
+print(x // y)
+A.2.5 <strong>B.2</strong> C.1/4 D.2.55</p>
+<p>2.下面代码的输出结果是
+x = &ldquo;Happy new year!&rdquo;
+print(x * 2)
+A.系统报错 <strong>B.Happy new year!Happy new year!</strong> C.Happy new year!
+D.Happy new year!
+Happy new year!</p>
+<p>3.下面代码的输出结果是
+a = &ldquo;ac&rdquo;
+b = &ldquo;bd&rdquo;
+c = a + b
+print(c)
+<strong>A.acbd</strong> B.abcd C.bdac D.dbca</p>
+<p>4.对以下代码的执行结果，描述正确的是
+print((255&gt;55) = = true)
+A.输出true B.输出False C.输出True <strong>D.出现错误：NameError: name &rsquo;true&rsquo; is not defined</strong></p>
+<h1 id="程序控制的三种结构">程序控制的三种结构
+</h1><h2 id="分支结构">分支结构
+</h2><h2 id="单分支结构if">单分支结构：if
+</h2><p>if &lt;条件&gt;:
+&lt;语句块&gt;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">flowchart TD
+</span></span><span class="line"><span class="cl">A[ ] --&gt; B{&lt;条件&gt;?}
+</span></span><span class="line"><span class="cl">B -- 否 --&gt; B
+</span></span><span class="line"><span class="cl">B -- 是 --&gt; C[&lt;语句块&gt;]
+</span></span><span class="line"><span class="cl">C --&gt; D[ ]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;HelloWorld&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;how r u doin?&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 判断一个成绩是否合格</span>
+</span></span><span class="line"><span class="cl"><span class="n">score</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个成绩：&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;恭喜你，成绩及格&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;成绩大于等于60分&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">---</span>
+</span></span><span class="line"><span class="cl"><span class="n">HelloWorld</span>
+</span></span><span class="line"><span class="cl"><span class="mi">123</span>
+</span></span><span class="line"><span class="cl"><span class="n">how</span> <span class="n">r</span> <span class="n">u</span> <span class="n">doin</span><span class="err">?</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入一个成绩</span><span class="err">：</span><span class="mi">91</span>
+</span></span><span class="line"><span class="cl"><span class="n">合格</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="二分支结构if-else">二分支结构：if-else
+</h2><p>if &lt;条件&gt;:
+&lt;语句块1&gt;
+else:
+&lt;语句块2&gt;</p>
 
 </section>
 
@@ -984,7 +1103,7 @@
 
 
         <span>
-            最后更新于 Mar 08, 2026 21:49 &#43;0800
+            最后更新于 Mar 09, 2026 18:20 &#43;0800
         </span>
     </section></footer>
 
