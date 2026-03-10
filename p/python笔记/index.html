@@ -10,7 +10,7 @@
 <meta property='og:description' content="标识符 在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。\n标识符命名规则：\n1.由大写字母、小写字母、数字、下划线、汉字组成\n2.对大小写敏感，不能以数字开头；\n">
 <meta property='og:url' content='https://Les-Ailes1014.github.io/p/python%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='冬日晴空'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2026-03-06T22:16:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-09T19:21:04&#43;08:00'/><meta property='og:image' content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2026-03-06T22:16:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-10T17:43:59&#43;08:00'/><meta property='og:image' content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
 <meta name="twitter:title" content="Python笔记">
 <meta name="twitter:description" content="标识符 在python程序中用来起名字的字符序列，如：变量名、类名、模块名等。\n标识符命名规则：\n1.由大写字母、小写字母、数字、下划线、汉字组成\n2.对大小写敏感，不能以数字开头；\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg' />
@@ -276,7 +276,21 @@
         <li><a href="#多分支结构if-elif-else">多分支结构：if-elif-else</a></li>
       </ol>
     </li>
-    <li><a href="#循环结构">循环结构</a></li>
+    <li><a href="#循环结构">循环结构</a>
+      <ol>
+        <li><a href="#循环控制contine">循环控制：contine</a></li>
+        <li><a href="#循环控制break">循环控制：break</a></li>
+      </ol>
+    </li>
+    <li><a href="#异常处理">异常处理</a>
+      <ol>
+        <li><a href="#try-except">try-except</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#函数的使用">函数的使用</a></li>
   </ol>
 </nav>
         </div>
@@ -1372,7 +1386,265 @@ Happy new year!</p>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h3 id="循环控制contine">循环控制：contine
+</h3><p>continue用来结束本次循环，continue后面的内容不会执行，然后继续执行下一次操作。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#输出1-100之间的所有偶数</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
+</div><h3 id="循环控制break">循环控制：break
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#输出1-100之间的前3个偶数</span>
+</span></span><span class="line"><span class="cl"><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># 用来计数</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl"><span class="o">---</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/python%E7%AC%94%E8%AE%B0/ef140ab0-5489-4c26-8b81-83b4344673b8.jpg"
+	width="599"
+	height="197"
+	srcset="/p/python%E7%AC%94%E8%AE%B0/ef140ab0-5489-4c26-8b81-83b4344673b8_hu_df705463009bb604.jpg 480w, /p/python%E7%AC%94%E8%AE%B0/ef140ab0-5489-4c26-8b81-83b4344673b8_hu_2828af1793a8b5b1.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="304"
+		data-flex-basis="729px"
+	
+>
+<img src="/p/python%E7%AC%94%E8%AE%B0/af6a1f0f-ed74-47cd-9243-20e91ecb702c.jpg"
+	width="538"
+	height="397"
+	srcset="/p/python%E7%AC%94%E8%AE%B0/af6a1f0f-ed74-47cd-9243-20e91ecb702c_hu_8cebf34d2e139387.jpg 480w, /p/python%E7%AC%94%E8%AE%B0/af6a1f0f-ed74-47cd-9243-20e91ecb702c_hu_8020b4e7a3bbe0c7.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="135"
+		data-flex-basis="325px"
+	
+>
+<img src="/p/python%E7%AC%94%E8%AE%B0/f23ded94-7060-45ad-b0b1-b2bfe784177e.jpg"
+	width="737"
+	height="291"
+	srcset="/p/python%E7%AC%94%E8%AE%B0/f23ded94-7060-45ad-b0b1-b2bfe784177e_hu_6274ee7501108ece.jpg 480w, /p/python%E7%AC%94%E8%AE%B0/f23ded94-7060-45ad-b0b1-b2bfe784177e_hu_956616addc8db3ed.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="253"
+		data-flex-basis="607px"
+	
+>
+<img src="/p/python%E7%AC%94%E8%AE%B0/8780ab2b-ead8-4ab9-b356-ca30e1ea964b.jpg"
+	width="472"
+	height="197"
+	srcset="/p/python%E7%AC%94%E8%AE%B0/8780ab2b-ead8-4ab9-b356-ca30e1ea964b_hu_7bf4a8ed37b17272.jpg 480w, /p/python%E7%AC%94%E8%AE%B0/8780ab2b-ead8-4ab9-b356-ca30e1ea964b_hu_a77011f484648065.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="239"
+		data-flex-basis="575px"
+	
+>
+<img src="/p/python%E7%AC%94%E8%AE%B0/8ec4e200-a110-4f03-949c-674c12f01c9e.jpg"
+	width="308"
+	height="399"
+	srcset="/p/python%E7%AC%94%E8%AE%B0/8ec4e200-a110-4f03-949c-674c12f01c9e_hu_2a8cdef69677900b.jpg 480w, /p/python%E7%AC%94%E8%AE%B0/8ec4e200-a110-4f03-949c-674c12f01c9e_hu_5ccac3c18d7b72cf.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="77"
+		data-flex-basis="185px"
+	
+>
+<img src="/p/python%E7%AC%94%E8%AE%B0/ca325c02-8c6c-4450-918d-250dcc151fdb.jpg"
+	width="362"
+	height="192"
+	srcset="/p/python%E7%AC%94%E8%AE%B0/ca325c02-8c6c-4450-918d-250dcc151fdb_hu_a0e71d81e5618d50.jpg 480w, /p/python%E7%AC%94%E8%AE%B0/ca325c02-8c6c-4450-918d-250dcc151fdb_hu_c717e46afca8f3cd.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="188"
+		data-flex-basis="452px"
+	
+></p>
+<h2 id="异常处理">异常处理
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">score = float(input(&#34;请输入你的成绩：&#34;))
+</span></span></span><span class="line"><span class="cl"><span class="s1">print(score)
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;这里不能除以零&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;出错了&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="try-except">try-except
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">score</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入你的成绩：&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;程序出错了，请稍后...&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/python%E7%AC%94%E8%AE%B0/66ab0ce4-83dc-4298-900e-c8f1e8e6da5e.jpg"
+	width="245"
+	height="281"
+	srcset="/p/python%E7%AC%94%E8%AE%B0/66ab0ce4-83dc-4298-900e-c8f1e8e6da5e_hu_e66cd6f2d199bab7.jpg 480w, /p/python%E7%AC%94%E8%AE%B0/66ab0ce4-83dc-4298-900e-c8f1e8e6da5e_hu_2f6dbc4a47a7e6a1.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="87"
+		data-flex-basis="209px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;这里不能除以零&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;出错了&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="函数的定义声明">函数的定义（声明）
+</h1><ul>
+<li>降低编程难度</li>
+<li>增加代码复用
+<img src="/p/python%E7%AC%94%E8%AE%B0/41a3fd24-4e4f-45c3-99cc-606cc518fa87.jpg"
+	width="589"
+	height="233"
+	srcset="/p/python%E7%AC%94%E8%AE%B0/41a3fd24-4e4f-45c3-99cc-606cc518fa87_hu_e4a2be30a8e94ee.jpg 480w, /p/python%E7%AC%94%E8%AE%B0/41a3fd24-4e4f-45c3-99cc-606cc518fa87_hu_a478dc0fc58e9f16.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="252"
+		data-flex-basis="606px"
+	
+></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fun</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">sum</span> <span class="o">+=</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">fun</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">---</span>
+</span></span><span class="line"><span class="cl"><span class="mi">5050</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="函数的使用">函数的使用
+</h2><p><code>&lt;函数名&gt;(&lt;实际赋值参数列表&gt;)</code></p>
+
 </section>
 
 
@@ -1395,7 +1667,7 @@ Happy new year!</p>
 
 
         <span>
-            最后更新于 Mar 09, 2026 19:21 &#43;0800
+            最后更新于 Mar 10, 2026 17:43 &#43;0800
         </span>
     </section></footer>
 
