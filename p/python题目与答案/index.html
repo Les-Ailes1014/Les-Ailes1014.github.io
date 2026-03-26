@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 41 考生文件夹下存在一个文件PY101. py，请写代码替换横线，不修改其他代码，实现以下功能:\n键盘输入正整数n，按要求把n输出到屏幕，格式要求:宽度为20个字符，减号字符-填充，右对齐，带千位分隔符。如果输入正整数超过20位，则按照真实长度输出。\n">
+<title>Python题目与答案</title>
+
+<link rel='canonical' href='https://Les-Ailes1014.github.io/p/python%E9%A2%98%E7%9B%AE%E4%B8%8E%E7%AD%94%E6%A1%88/'>
+
+<link rel="stylesheet" href="/scss/style.min.58ae3cf235affabce5c2e557b1bef445e30b7c8dff6e0f05b7c4b68093e965bb.css"><meta property='og:title' content="Python题目与答案">
+<meta property='og:description' content="1 41 考生文件夹下存在一个文件PY101. py，请写代码替换横线，不修改其他代码，实现以下功能:\n键盘输入正整数n，按要求把n输出到屏幕，格式要求:宽度为20个字符，减号字符-填充，右对齐，带千位分隔符。如果输入正整数超过20位，则按照真实长度输出。\n">
+<meta property='og:url' content='https://Les-Ailes1014.github.io/p/python%E9%A2%98%E7%9B%AE%E4%B8%8E%E7%AD%94%E6%A1%88/'>
+<meta property='og:site_name' content='冬日晴空'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2026-03-26T20:12:21&#43;08:00'/><meta property='article:modified_time' content='2026-03-26T20:21:12&#43;08:00'/><meta property='og:image' content='https://home.les-ailes1014.xyz/imgbed/1560c7fff0556229e56ac70a71369bacb42988292f0e544b928027e1031049f7.jpg' />
+<meta name="twitter:title" content="Python题目与答案">
+<meta name="twitter:description" content="1 41 考生文件夹下存在一个文件PY101. py，请写代码替换横线，不修改其他代码，实现以下功能:\n键盘输入正整数n，按要求把n输出到屏幕，格式要求:宽度为20个字符，减号字符-填充，右对齐，带千位分隔符。如果输入正整数超过20位，则按照真实长度输出。\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://home.les-ailes1014.xyz/imgbed/1560c7fff0556229e56ac70a71369bacb42988292f0e544b928027e1031049f7.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_91c4c1ae8a01e7f6.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🌌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">冬日晴空</a></h1>
+            <h2 class="site-description">欢迎来到冬日晴空的小站！这里目前还没什么东西，不过我后续会努力更新的 此博客使用Hugo &#43; Stack主题搭建</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://steamcommunity.com/profiles/76561198351962786/'
+                        target="_blank"
+                        title="我的steam主页"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-steam"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.5 5a4.5 4.5 0 1 1 -.653 8.953l-4.347 3.009l0 .038a3 3 0 0 1 -2.824 3l-.176 0a3 3 0 0 1 -2.94 -2.402l-2.56 -1.098v-3.5l3.51 1.755a2.989 2.989 0 0 1 2.834 -.635l2.727 -3.818a4.5 4.5 0 0 1 4.429 -5.302z" /><circle cx="16.5" cy="9.5" r="1" fill="currentColor" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/80390495'
+                        target="_blank"
+                        title="我的哔哩哔哩主页"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://music.163.com/#/user/home?id=113126299'
+                        target="_blank"
+                        title="我的网易云音乐主页"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-netease-music"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 4c-2.93 1.346 -5 5.046 -5 8.492c0 4.508 4 7.508 8 7.508s8 -3 8 -7c0 -3.513 -3.5 -5.513 -6 -5.513s-5 1.513 -5 4.513c0 2 1.5 3 3 3s3 -1 3 -3c0 -3.513 -2 -4.508 -2 -6.515c0 -3.504 3.5 -2.603 4 -1.502" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-satellite"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z" /><path d="M6 10l-3 3l3 3l3 -3" /><path d="M10 6l3 -3l3 3l-3 3" /><path d="M12 12l1.5 1.5" /><path d="M14.5 17a2.5 2.5 0 0 0 2.5 -2.5" /><path d="M15 21a6 6 0 0 0 6 -6" /></svg>
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-universe"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7.027 11.477a5 5 0 1 0 5.496 -4.45a4.951 4.951 0 0 0 -3.088 .681" /><path d="M5.636 5.636a9 9 0 1 0 3.555 -2.188" /><path d="M18 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M9 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                
+                <span>分类&amp;时间线</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-telescope"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 21l6 -5l6 5" /><path d="M12 13v8" /><path d="M3.294 13.678l.166 .281c.52 .88 1.624 1.265 2.605 .91l14.242 -5.165a1.023 1.023 0 0 0 .565 -1.456l-2.62 -4.705a1.087 1.087 0 0 0 -1.447 -.42l-.056 .032l-12.694 7.618c-1.02 .613 -1.357 1.897 -.76 2.905z" /><path d="M14 5l3 5.5" /></svg>
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-globe"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 9a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M5.75 15a8.015 8.015 0 1 0 9.25 -13" /><path d="M11 17v4" /><path d="M7 21h8" /></svg>
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-planetscale"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.993 11.63a9 9 0 0 1 -9.362 9.362l9.362 -9.362z" /><path d="M12 3a9.001 9.001 0 0 1 8.166 5.211l-11.955 11.955a9 9 0 0 1 3.789 -17.166z" /><path d="M12 12l-6 6" /></svg>
+                
+                <span>更新日志</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#41">41</a></li>
+        <li><a href="#42">42</a></li>
+        <li><a href="#43">43</a></li>
+        <li><a href="#44">44</a></li>
+        <li><a href="#45">45</a></li>
+        <li><a href="#46">46</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#41-1">41</a></li>
+        <li><a href="#42-1">42</a></li>
+        <li><a href="#43-1">43</a></li>
+        <li><a href="#44-1">44</a></li>
+        <li><a href="#45-1">45</a></li>
+        <li><a href="#46-1">46</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#41-2">41</a></li>
+        <li><a href="#42-2">42</a></li>
+        <li><a href="#43-2">43</a></li>
+        <li><a href="#44-2">44</a></li>
+        <li><a href="#45-2">45</a></li>
+        <li><a href="#46-2">46</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#41-3">41</a></li>
+        <li><a href="#42-3">42</a></li>
+        <li><a href="#43-3">43</a></li>
+        <li><a href="#44-3">44</a></li>
+        <li><a href="#45-3">45</a></li>
+        <li><a href="#46-3">46</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/python%E9%A2%98%E7%9B%AE%E4%B8%8E%E7%AD%94%E6%A1%88/">
+                
+                    <img src="https://home.les-ailes1014.xyz/imgbed/1560c7fff0556229e56ac70a71369bacb42988292f0e544b928027e1031049f7.jpg" loading="lazy" alt="Featured image of post Python题目与答案" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%AC%94%E8%AE%B0/" >
+                笔记
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/python%E9%A2%98%E7%9B%AE%E4%B8%8E%E7%AD%94%E6%A1%88/">Python题目与答案</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 26, 2026</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="1">1
+</h1><h3 id="41">41
+</h3><p>考生文件夹下存在一个文件PY101. py，请写代码替换横线，不修改其他代码，实现以下功能:</p>
+<p>键盘输入正整数n，按要求把n输出到屏幕，格式要求:宽度为20个字符，减号字符-填充，右对齐，带千位分隔符。如果输入正整数超过20位，则按照真实长度输出。</p>
+<p>例如:键盘输入正整数n为1234，屏幕输出&mdash;&mdash;&mdash;&mdash;&mdash;1,234</p>
+<p>提示:建议使用本机提供的Python集成开发环境IDLE编写、 调试及验证程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入正整数:&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{______}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入正整数:&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{:-&gt;20,}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入正整数</span><span class="p">:</span><span class="mi">1234</span>
+</span></span><span class="line"><span class="cl"><span class="o">---------------</span><span class="mi">1</span><span class="p">,</span><span class="mi">234</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="42">42
+</h3><p>考生文件夹下存在一个文件PY102. py，请写代码替换横线，不修改其他代码，实现以下功能:</p>
+<p>a和b是两个列表变量，列表a为[3, 6, 9]已给定，键盘输入列表b，计算a中元素与b中对应元素乘积的累加和。</p>
+<p>例如:键盘输入列表b为[1,2, 3]，累加和为1 x 3+2 x 6+3 x 9=42，因此，屏幕输出计算结果为42</p>
+<p>提示:建议使用本机提供的Python集成开发环境IDLE编写、调试及验证程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span>  <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="c1">#例如：[1,2,3]</span>
+</span></span><span class="line"><span class="cl"><span class="n">______</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">______</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span> <span class="o">+=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span>  <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="c1">#例如：[1,2,3]</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span> <span class="o">+=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mi">42</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="43">43
+</h3><p>考生文件夹下存在一个文件PY103. py，请写代码替换横线，不修改其他代码，实现以下功能:</p>
+<p>以123为随机数种子，随机生成10个在1 (含)到999 (含)之间的随机整数，每个随机数后跟随一个逗号进行分隔，屏幕输出这10个随机数。</p>
+<p>提示:建议使用本机提供的Python集成开发环境IDLE编写、 调试及验证程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="n">______</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">______</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">______</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&#34;,&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&#34;,&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">49</span><span class="p">,</span><span class="mi">69</span><span class="p">,</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="44">44
+</h3><p>考生文件夹下存在一个文件PY201.py，请写代码替换横线，不修改其他代码，实现以下功能:</p>
+<p>使用turtle库的turtle. right()函数和turtle.fd()函数绘制一个菱形，边长为200像素，4个内角度数为2个60度和2个120度，效果如图所示。</p>
+<p>![](Pasted image 20260326140245.png)</p>
+<p>提示:建议使用本机提供的Python集成开发环境IDLE编写、调试及验证程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">___</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="n">___</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">___</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="n">___</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![](Pasted image 20260326140245.png)</p>
+<h3 id="45">45
+</h3><p>考生文件夹下存在一个文件PY202.py，该文件是本题目的代码提示框架，其中代码可以任意修改，请在该文件中编写代码，以实现如下功能:</p>
+<p>键盘输入一组人员的姓名、性别、年龄等信息，信息间采用空格分隔，每人一行，空行回车结束录入，示例格式如下:</p>
+<p>张三 男 23</p>
+<p>李四 女 21</p>
+<p>王五 男 18</p>
+<p>计算并输出这组人员的平均年龄(保留2位小数)和其中男性人数，格式如下:</p>
+<p>平均年龄是20.67 男性人数是2</p>
+<p>提示:建议使用本机提供的Python集成开发环境IDLE编写、 调试及验证程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>  <span class="c1"># 姓名 年龄 性别</span>
+</span></span><span class="line"><span class="cl"><span class="n">total_age</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">male_count</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">data</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;平均年龄是</span><span class="si">{:.2f}</span><span class="s2"> 男性人数是</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">______</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> <span class="c1"># 姓名 年龄 性别 </span>
+</span></span><span class="line"><span class="cl"><span class="n">total_age</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># 总年龄 </span>
+</span></span><span class="line"><span class="cl"><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># 总人数 </span>
+</span></span><span class="line"><span class="cl"><span class="n">male_num</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># 男性人数 </span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">data</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">name</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="c1"># 拆分输入 </span>
+</span></span><span class="line"><span class="cl">	<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="c1"># 转整数 </span>
+</span></span><span class="line"><span class="cl">	<span class="n">total_age</span> <span class="o">+=</span> <span class="n">age</span> <span class="c1"># 累加年龄 </span>
+</span></span><span class="line"><span class="cl">	<span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># 人数+1 </span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="n">gender</span> <span class="o">==</span> <span class="s2">&#34;男&#34;</span><span class="p">:</span> <span class="c1"># 判断性别 </span>
+</span></span><span class="line"><span class="cl">		<span class="n">male_num</span> <span class="o">+=</span> <span class="mi">1</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> 
+</span></span><span class="line"><span class="cl"><span class="n">avg_age</span> <span class="o">=</span> <span class="n">total_age</span> <span class="o">/</span> <span class="n">count</span> <span class="c1"># 计算平均年龄 </span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;平均年龄是</span><span class="si">{:.2f}</span><span class="s2"> 男性人数是</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">avg_age</span><span class="p">,</span> <span class="n">male_num</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="46">46
+</h3><p>考生文件夹下存在3个Python源文件，分别对应3个问题，1个文本文件，作为本题目输入数据，请按照源文件内部说明修改代码，实现以下功能:</p>
+<p>《命运》是著名科幻作家倪匡的作品。这里给出《命运》的一个网络版本文件，文件名为“命运. txt”。</p>
+<p>问题1 (5分) :在PY301-1. py文件中修改代码，对“命运. txt”文件进行字符频次统计，输出频次最高的中文字符(不包含标点符号)及其频次，字符与频次之间采用英文冒号”:”分隔，示例格式如下:</p>
+<p>理:224</p>
+<p>问题2 (5分) :在PY301-2. py文件中修改代码，对“命运. txt”文件进行字符频次统计，按照频次由高到低，屏幕输出前10个频次最高的字符，不包含回车符，字符之间无间隔，连续输出，示例格式如下:</p>
+<p>理斯卫&hellip;(后略，共10个字符)</p>
+<p>问题3 (10分) :在PY301-3. py文件中修改代码，对“命运. txt”文件进行字符频次统计，将所有字符按照频次从高到低排序，字符包括中文、标点、英文等符号，但不包含空格和回车。将排序后的字符及频次输出到考生文件夹下，文件名为“命运-频次排序. txt”。字符与频次之间采用英文冒号”:”分隔，各字符之间采用英文逗号”,”分隔，参考CSV格式， 最后无逗号，文件内部示例格式如下:</p>
+<p>理:224,斯:120,卫:100</p>
+<p>提示:建议使用本机提供的Python集成开发环境IDLE编写、 调试及验证程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;命运.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;gbk&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">punctuation</span> <span class="o">=</span> <span class="s2">&#34;，。、；：？！‘’“”（）《》【】……——,.!?;:</span><span class="se">\n\t</span><span class="s2"> &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">txt</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">c</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">punctuation</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">d</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">max_char</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_count</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="n">max_char</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">max_char</span><span class="p">,</span> <span class="n">max_count</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">的</span><span class="p">:</span><span class="mi">2557</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;命运.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">txt</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">c</span> <span class="o">!=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">:</span>  <span class="c1"># 不包含回车符</span>
+</span></span><span class="line"><span class="cl">        <span class="n">d</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 输出前10个字符</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span> <span class="o">+=</span> <span class="n">ls</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="err">，</span><span class="n">的</span><span class="s2">&#34;一我了。是不有</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 完整满分代码</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;命运.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">txt</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">c</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">]:</span>  <span class="c1"># 不含空格和回车</span>
+</span></span><span class="line"><span class="cl">        <span class="n">d</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 拼接字符串</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 写入文件</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;命运-频次排序.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="err">，</span><span class="p">:</span><span class="mi">6698</span><span class="p">,</span><span class="n">的</span><span class="p">:</span><span class="mi">2557</span><span class="p">,</span><span class="s2">&#34;:2046,一:1952,我:1826,了:1546,。:1478,是:1465,不:1243,有:1044,：:948,他:900,来:852,在:797,这:771,那:687,然:625,人:609,道:593,个:540,可:535,到:530,就:488,么:479,上:476,着:452,说:443,以:431,们:428,之:425,也:414,看:414,事:407,生:393,你:392,头:385,出:372</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="2">2
+</h1><h3 id="41-1">41
+</h3><p>考生文件夹下存在一个文件PY101.py，请写代码替换横线，不修改其他代码，实现以下功能:</p>
+<p>随机选择一一个手机品牌屏幕输出。</p>
+<p>提示:建议使用本机提供的Python集成开发环境IDLE编写、调试及验证程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">______</span>
+</span></span><span class="line"><span class="cl"><span class="n">brandlist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;华为&#39;</span><span class="p">,</span><span class="s1">&#39;苹果&#39;</span><span class="p">,</span><span class="s1">&#39;诺基亚&#39;</span><span class="p">,</span><span class="s1">&#39;OPPO&#39;</span><span class="p">,</span><span class="s1">&#39;小米&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">______</span> 
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="n">brandlist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;华为&#39;</span><span class="p">,</span><span class="s1">&#39;苹果&#39;</span><span class="p">,</span><span class="s1">&#39;诺基亚&#39;</span><span class="p">,</span><span class="s1">&#39;OPPO&#39;</span><span class="p">,</span><span class="s1">&#39;小米&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">brandlist</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">OPPO</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="42-1">42
+</h3><p>例如，键盘输入:</p>
+<p>俄罗斯举办世界杯</p>
+<p>屏幕输出:
+中文字符数为8，中文词语数为3。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">jieba</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个字符串&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="n">______</span>
+</span></span><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="n">______</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;中文字符数为</span><span class="si">{}</span><span class="s2">，中文词语数为</span><span class="si">{}</span><span class="s2">。&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">jieba</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个字符串&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">jieba</span><span class="o">.</span><span class="n">lcut</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;中文字符数为</span><span class="si">{}</span><span class="s2">，中文词语数为</span><span class="si">{}</span><span class="s2">。&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入一个字符串俄罗斯举办世界杯</span>
+</span></span><span class="line"><span class="cl"><span class="n">Building</span> <span class="n">prefix</span> <span class="nb">dict</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">default</span> <span class="n">dictionary</span> <span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">Loading</span> <span class="n">model</span> <span class="kn">from</span> <span class="nn">cache</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ap39c</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">jieba</span><span class="o">.</span><span class="n">cache</span>
+</span></span><span class="line"><span class="cl"><span class="n">Loading</span> <span class="n">model</span> <span class="n">cost</span> <span class="mf">0.508</span> <span class="n">seconds</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">Prefix</span> <span class="nb">dict</span> <span class="n">has</span> <span class="n">been</span> <span class="n">built</span> <span class="n">successfully</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">中文字符数为8</span><span class="err">，</span><span class="n">中文词语数为3</span><span class="err">。</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="43-1">43
+</h3><p>某商店出售某品牌运动鞋，每双定价160，1双不打折，2双(含)到4双(含)打九折，5双(含)到9双(含)打八折，10双(含)以上打七折，键盘输入购买数量，屏幕输出总额(保留整数)。示例格式如下:</p>
+<p>输入: 1</p>
+<p>输出:总额为: 160</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入数量：&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">......</span>   
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;总额为:&#34;</span><span class="p">,</span><span class="n">cost</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入数量：&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cost</span> <span class="o">=</span> <span class="mi">160</span> <span class="o">*</span> <span class="n">n</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">4</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cost</span> <span class="o">=</span> <span class="mi">160</span> <span class="o">*</span> <span class="n">n</span> <span class="o">*</span> <span class="mf">0.9</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">9</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cost</span> <span class="o">=</span> <span class="mi">160</span> <span class="o">*</span> <span class="n">n</span> <span class="o">*</span> <span class="mf">0.8</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cost</span> <span class="o">=</span> <span class="mi">160</span> <span class="o">*</span> <span class="n">n</span> <span class="o">*</span> <span class="mf">0.7</span>
+</span></span><span class="line"><span class="cl"><span class="n">cost</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;总额为:&#34;</span><span class="p">,</span><span class="n">cost</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入数量</span><span class="err">：</span><span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="n">总额为</span><span class="p">:</span> <span class="mi">1120</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入数量</span><span class="err">：</span><span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="n">总额为</span><span class="p">:</span> <span class="mi">640</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入数量</span><span class="err">：</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">总额为</span><span class="p">:</span> <span class="mi">432</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入数量</span><span class="err">：</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">总额为</span><span class="p">:</span> <span class="mi">160</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="44-1">44
+</h3><p>使用turtle库的turtle.fd()函数和turtle. seth()函数绘制一个边长为200的正菱形，菱形4个内角均为90度。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="n">____</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="n">____</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle</span><span class="o">.</span><span class="n">seth</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d</span>  <span class="o">+=</span> <span class="n">____</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="n">____</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="n">____</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="n">____</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="o">-</span><span class="mi">45</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle</span><span class="o">.</span><span class="n">seth</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d</span>  <span class="o">+=</span> <span class="mi">90</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![](Pasted image 20260326161515.png)</p>
+<h3 id="45-1">45
+</h3><p>键盘输入某班各个同学就业的行业名称，行业名称之间用空格间隔(回车结束输入)。完善Python代码，统计各行业就业的学生数量,按数量从高到低方式输出。例如输入:</p>
+<p>交通 金融 计算机 交通 计算机 计算机</p>
+<p>输出参考格式如下，其中冒号为英文冒号:</p>
+<p>计算机:3</p>
+<p>交通:2</p>
+<p>金融:1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">names</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入各个同学行业名称，行业名称之间用空格间隔（回车结束输入）：&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># 按照数量排序</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">ls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">______</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入各个同学行业名称，行业名称之间用空格间隔（回车结束输入）：&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">namelist</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">namelist</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># 按照数量排序</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">ls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入各个同学行业名称</span><span class="err">，</span><span class="n">行业名称之间用空格间隔</span><span class="err">（</span><span class="n">回车结束输入</span><span class="err">）：</span><span class="n">交通</span> <span class="n">金融</span> <span class="n">计算机</span> <span class="n">交通</span> <span class="n">计算机</span> <span class="n">计算机</span>
+</span></span><span class="line"><span class="cl"><span class="n">计算机</span><span class="p">:</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">交通</span><span class="p">:</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">金融</span><span class="p">:</span><span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="46-1">46
+</h3><p>考生文件夹下存在两个Python源文件，分别对应两个问题，请按照文件内说明修改代码，实现以下功能:</p>
+<p>下面所示为一套由公司职员随身佩戴的位置传感器采集的数据，文件名称为“sensor.txt”，其内容示例如下:</p>
+<p>2016/5/31 0:05， vawelon001, 1, 1</p>
+<p>2016/5/31 0:20， earpa001, 1,1</p>
+<p>2016/5/31 2:26， earpa001,1, 6</p>
+<p>&hellip; (略)</p>
+<p>第一列是传感器获取数据的时间，第二列是传感器的编号，第三列是传感器所在的楼层，第四列是传感器所在的位置区域编号。</p>
+<p>问题1 (10分) :在PY301-1. py文件中修改代码，读入sensor. txt文件中的数据，提取出传感器编号为earpa001的所有数据，将结果输出保存到“earpa001. txt”文件。输出文件格式要求:原数据文件中的每行记录写入新文件中，行尾无空格，无空行。参考格式如下:</p>
+<p>2016/5/31 7:11， earpa001,2, 4</p>
+<p>2016/5/31 8:02， earpa001,3, 4</p>
+<p>2016/5/31 9:22， earpa001,3,4</p>
+<p>&hellip; (略)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">______</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">	<span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">______</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;sensor.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;earpa001.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="n">L</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;,&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;earpa001&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">L</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">earpa001</span><span class="o">.</span><span class="n">txt</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2016</span><span class="o">/</span><span class="mi">5</span><span class="o">/</span><span class="mi">31</span> <span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">earpa001</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2016</span><span class="o">/</span><span class="mi">5</span><span class="o">/</span><span class="mi">31</span> <span class="mi">2</span><span class="p">:</span><span class="mi">26</span><span class="p">,</span><span class="n">earpa001</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2016</span><span class="o">/</span><span class="mi">5</span><span class="o">/</span><span class="mi">31</span> <span class="mi">3</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span><span class="n">earpa001</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2016</span><span class="o">/</span><span class="mi">5</span><span class="o">/</span><span class="mi">31</span> <span class="mi">5</span><span class="p">:</span><span class="mi">57</span><span class="p">,</span><span class="n">earpa001</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2016</span><span class="o">/</span><span class="mi">5</span><span class="o">/</span><span class="mi">31</span> <span class="mi">6</span><span class="p">:</span><span class="mi">59</span><span class="p">,</span><span class="n">earpa001</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>问题2 (10分) :在PY301-2. py文件中修改代码，读入“earpa001. txt” 文件中的数据，统计earpa001对应的职员在各楼层和区域出现的次数，保存到“earpa001_count. txt” 文件，每条记录一 行，位置信息和出现的次数之间用英文半角逗号隔开，行尾无空格，无空行。参考格式如下。</p>
+<p>1-1,5</p>
+<p>1-4, 3</p>
+<p>&hellip; (略)</p>
+<p>含义如下:</p>
+<p>第1行“1-1,5”中1-1表示1楼1号区域，5表示出现5次;</p>
+<p>第2行“1-4,3”中1-4表示1楼4号区域，3表示出现3次;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># 该语句用于排序</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">  <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">______</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;sensor.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;earpa001.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 第一处填空 ______</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 处理每行</span>
+</span></span><span class="line"><span class="cl">    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="n">L</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;,&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 去掉空格</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 判断传感器编号</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;earpa001&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 第二处填空 ______</span>
+</span></span><span class="line"><span class="cl">        <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">L</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">fi</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================</span>
+</span></span><span class="line"><span class="cl"><span class="n">earpa001_count</span><span class="o">.</span><span class="n">txt</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="3">3
+</h1><h3 id="41-2">41
+</h3><p>从键盘输入4个数字，各数字采用空格分隔，对应为变量x0,y0,x1,y1。计算两点（x0,y0）和（x1,y1）之间的距离，屏幕输出这个距离，保留2位小数。</p>
+<p>例如：键盘输入：0 1 3 5</p>
+<p>屏幕输出：5.00</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ntxt</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入4个数字(空格分隔):&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">______z</span>
+</span></span><span class="line"><span class="cl"><span class="n">x0</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">nls</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">y0</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">nls</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">x1</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">nls</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">y1</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">nls</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="n">x0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">y1</span><span class="o">-</span><span class="n">y0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">______</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntxt</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入4个数字(空格分隔):&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">nls</span> <span class="o">=</span> <span class="n">ntxt</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">x0</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">nls</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">y0</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">nls</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">x1</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">nls</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">y1</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">nls</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="n">x0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">y1</span><span class="o">-</span><span class="n">y0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mf">0.5</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入4个数字</span><span class="p">(</span><span class="n">空格分隔</span><span class="p">):</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">3</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="mf">5.00</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="42-2">42
+</h3><p>键盘输入一段中文文本，不含标点符号和空格，命名为变量s，采用jieba库对其进行分词，输出该文本中词语的平均长度，保留1位小数。</p>
+<p>例如：键盘输入：吃葡萄不吐葡萄皮</p>
+<p>屏幕输出：1.6</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">______</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一段中文文本:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">______</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{:.1f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">ls</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">jieba</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一段中文文本:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="n">jieba</span><span class="o">.</span><span class="n">lcut</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{:.1f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">ls</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入一段中文文本</span><span class="p">:</span><span class="n">吃葡萄不吐葡萄皮</span>
+</span></span><span class="line"><span class="cl"><span class="n">Building</span> <span class="n">prefix</span> <span class="nb">dict</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">default</span> <span class="n">dictionary</span> <span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">Dumping</span> <span class="n">model</span> <span class="n">to</span> <span class="n">file</span> <span class="n">cache</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ap39c</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">jieba</span><span class="o">.</span><span class="n">cache</span>
+</span></span><span class="line"><span class="cl"><span class="n">Loading</span> <span class="n">model</span> <span class="n">cost</span> <span class="mf">0.549</span> <span class="n">seconds</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">Prefix</span> <span class="nb">dict</span> <span class="n">has</span> <span class="n">been</span> <span class="n">built</span> <span class="n">successfully</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.6</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="43-2">43
+</h3><p>键盘输入一个9800到9811之间的正整数n，作为Unicode编码，把n-1、n和n+1三个Unicode编码对应字符按照如下格式要求输出到屏幕：宽度为11个字符，加号字符+填充，居中。</p>
+<p>例如：键盘输入：9802</p>
+<p>屏幕输出：++++++++</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个数字:&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{______}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">______</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个数字:&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{:+^11}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="nb">chr</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">+</span><span class="nb">chr</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入一个数字</span><span class="p">:</span><span class="mi">9802</span>
+</span></span><span class="line"><span class="cl"><span class="o">++++</span><span class="err">♉♊♋</span><span class="o">++++</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="44-2">44
+</h3><p>使用turtle库的turtle.fd()函数和turtle.seth()函数绘制一个每方向为100像素长度的十字形，效果如图所示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">___</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="n">___z</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">___</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="n">___</span><span class="p">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle</span><span class="o">.</span><span class="n">seth</span><span class="p">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![](Pasted image 20260326182037.png)</p>
+<h3 id="45-2">45
+</h3><p>键盘输入一组我国高校所对应的学校类型，以空格分隔，共一行，示例格式如下：</p>
+<p>综合 理工 综合 综合 综合 师范 理工</p>
+<p>统计各类型的数量，从数量多到少的顺序屏幕输出类型及对应数量，以英文冒号分隔，每个类型一行，输出参考格式如下：</p>
+<p>综合:4</p>
+<p>理工:2</p>
+<p>师范:1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入类型序列: &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># 按照数量排序</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">ls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入类型序列: &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="n">txt</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">ls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># 按照数量排序</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">ls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入类型序列</span><span class="p">:</span> <span class="n">综合</span> <span class="n">理工</span> <span class="n">综合</span> <span class="n">综合</span> <span class="n">综合</span> <span class="n">师范</span> <span class="n">理工</span>
+</span></span><span class="line"><span class="cl"><span class="n">综合</span><span class="p">:</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="n">理工</span><span class="p">:</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">师范</span><span class="p">:</span><span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="46-2">46
+</h3><p>《论语》是儒家学派的经典著作之一，主要记录了孔子及其弟子言行。这里给出了一个网络版本的《论语》，文件名称为“论语.txt”，其内容采用逐句“原文”与逐句“注释”相结合的形式组织，通过【原文】标记《论语》原文内容，通过【注释】标记《论语》注释内容，具体文件格式框架请参考“论语.txt”文件。</p>
+<p>问题1（10分）：在PY301-1.py文件中修改代码，提取“论语.txt”文件中的原文内容，输出保存到考生文件夹下，文件名为“论语-原文.txt”。具体要求：仅保留“论语.txt”文件中所有【原文】标签下面的内容，不保留标签，并去掉每行行首空格及行尾空格，无空行。原文小括号及内部数字是源文件中注释项的标记，请保留。示例输出文件格式请参考“论语-原文-输出示例.txt”文件。注意：示例输出文件帮助考生了解输出格式，不作它用。</p>
+<p>问题2（10分）：在PY301-2.py文件中修改代码，对“论语-原文.txt”或“论语.txt”文件进一步提纯，去掉每行文字中所有小括号及内部数字，保存为“论文-提纯原文.txt”文件。示例输出文件格式请参考“论语-提纯原文-输出示例.txt”文件。注意：示例输出文件帮助考生了解输出格式，不作它用。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语.txt&#34;</span><span class="p">,</span> <span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-原文.txt&#34;</span><span class="p">,</span> <span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&#34; </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;gbk&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-原文.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;gbk&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;【原文】&#34;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;【注释】&#34;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">flag</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&#34; </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span> <span class="o">+</span> <span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-原文.txt&#34;</span><span class="p">,</span> <span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-提纯原文.txt&#34;</span><span class="p">,</span> <span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="n">line</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-原文.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-提纯原文.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 循环去掉所有 (数字)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="s2">&#34;(&#34;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">left</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;(&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">right</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="n">left</span><span class="p">:</span><span class="n">right</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">fi</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="4">4
+</h1><h3 id="41-3">41
+</h3><p>键盘输入字符串s，按要求把s输出到屏幕，格式要求：宽度为20个字符，等号字符=填充，居中对齐。如果输入字符串超过20位，则全部输出。</p>
+<p>例如：键盘输入字符串s为&quot;PYTHON&quot;，屏幕输出<code>=======PYTHON=======</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个字符串:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{______}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个字符串:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{:=^20}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入一个字符串</span><span class="p">:</span><span class="n">PYTHON</span>
+</span></span><span class="line"><span class="cl"><span class="o">=======</span><span class="n">PYTHON</span><span class="o">=======</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="42-3">42
+</h3><p>根据斐波那契数列的定义，F(0)=0，F(1)=1，F(n)=F(n-1)+F(n-2)(n&gt;=2)，输出不大于100的序列元素。</p>
+<p>例如：屏幕输出实例为：</p>
+<p>0,1,1,2,3，…（略）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">______</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">______</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mi">55</span><span class="p">,</span><span class="mi">89</span><span class="p">,</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="43-3">43
+</h3><p>键盘输入一句话，用jieba分词后，将切分的词组按照在原话中逆序输出到屏幕上，词组中间没有空格。示例如下：</p>
+<p>输入：
+我爱妈妈</p>
+<p>输出：
+妈妈爱我</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">jieba</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一段中文文本:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="n">jieba</span><span class="o">.</span><span class="n">lcut</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ls</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">jieba</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一段中文文本:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ls</span> <span class="o">=</span> <span class="n">jieba</span><span class="o">.</span><span class="n">lcut</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ls</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">请输入一段中文文本</span><span class="p">:</span><span class="n">我爱妈妈</span>
+</span></span><span class="line"><span class="cl"><span class="n">Building</span> <span class="n">prefix</span> <span class="nb">dict</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">default</span> <span class="n">dictionary</span> <span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">Loading</span> <span class="n">model</span> <span class="kn">from</span> <span class="nn">cache</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ap39c</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">jieba</span><span class="o">.</span><span class="n">cache</span>
+</span></span><span class="line"><span class="cl"><span class="n">Loading</span> <span class="n">model</span> <span class="n">cost</span> <span class="mf">0.501</span> <span class="n">seconds</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">Prefix</span> <span class="nb">dict</span> <span class="n">has</span> <span class="n">been</span> <span class="n">built</span> <span class="n">successfully</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">妈妈爱我</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="44-3">44
+</h3><p>使用turtle库的turtle.fd()函数和turtle.seth()函数绘制一个每方向为100像素长度的十字形，效果如图所示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span> <span class="k">as</span> <span class="nn">___</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="n">___</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">___</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="n">___</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">___</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="n">___</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">120</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码或表达式替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：请不要修改其他已给出代码</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span> <span class="k">as</span> <span class="nn">t</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="o">.</span><span class="n">seth</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">120</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![](Pasted image 20260326195400.png)</p>
+<h3 id="45-3">45
+</h3><p>键盘输入一组我国高校所对应的学校类型，以空格分隔，共一行，示例格式如下：</p>
+<p>综合 理工 综合 综合 综合 师范 理工</p>
+<p>统计各类型的数量，从数量多到少的顺序屏幕输出类型及对应数量，以英文冒号分隔，每个类型一行，输出参考格式如下：</p>
+<p>综合:4</p>
+<p>理工:2</p>
+<p>师范:1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>  <span class="c1"># 课程名 考分</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>  
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">data</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;最高分课程是</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">, 最低分课程是</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">, 平均分是</span><span class="si">{:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">______</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>  <span class="c1"># 课程名 考分</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ===== 第一处 ... 填写 =====</span>
+</span></span><span class="line"><span class="cl"><span class="n">score_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># 存储 [课程名, 分数]</span>
+</span></span><span class="line"><span class="cl"><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>        <span class="c1"># 总分</span>
+</span></span><span class="line"><span class="cl"><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>        <span class="c1"># 课程数</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">data</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ===== 第二处 ... 填写 =====</span>
+</span></span><span class="line"><span class="cl">    <span class="n">course</span><span class="p">,</span> <span class="n">score</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">score_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">course</span><span class="p">,</span> <span class="n">score</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">total</span> <span class="o">+=</span> <span class="n">score</span>
+</span></span><span class="line"><span class="cl">    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ===== 第三处 ... 填写 =====</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 排序：按分数从高到低</span>
+</span></span><span class="line"><span class="cl"><span class="n">score_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_course</span> <span class="o">=</span> <span class="n">score_list</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_score</span> <span class="o">=</span> <span class="n">score_list</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">min_course</span> <span class="o">=</span> <span class="n">score_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">min_score</span> <span class="o">=</span> <span class="n">score_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">avg</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">count</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ===== ______ 填写 =====</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;最高分课程是</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">, 最低分课程是</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">, 平均分是</span><span class="si">{:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">max_course</span><span class="p">,</span> <span class="n">max_score</span><span class="p">,</span> <span class="n">min_course</span><span class="p">,</span> <span class="n">min_score</span><span class="p">,</span> <span class="n">avg</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">数学</span> <span class="mi">90</span>
+</span></span><span class="line"><span class="cl"><span class="n">语文</span> <span class="mi">95</span>
+</span></span><span class="line"><span class="cl"><span class="n">英语</span> <span class="mi">86</span>
+</span></span><span class="line"><span class="cl"><span class="n">物理</span> <span class="mi">84</span>
+</span></span><span class="line"><span class="cl"><span class="n">生物</span> <span class="mi">87</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">最高分课程是语文</span> <span class="mi">95</span><span class="p">,</span> <span class="n">最低分课程是物理</span> <span class="mi">84</span><span class="p">,</span> <span class="n">平均分是88</span><span class="mf">.40</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="46-3">46
+</h3><p>《论语》是儒家学派的经典著作之一，主要记录了孔子及其弟子言行。这里给出了一个网络版本的《论语》，文件名称为“论语.txt”，其内容采用逐句“原文”与逐句“注释”相结合的形式组织，通过【原文】标记《论语》原文内容，通过【注释】标记《论语》注释内容，具体文件格式框架请参考“论语.txt”文件。</p>
+<p>问题1（10分）：在PY301-1.py文件中修改代码，提取“论语.txt”文件中的原文内容，输出保存到考生文件夹下，文件名为“论语-原文.txt”。具体要求：仅保留“论语.txt”文件中所有【原文】标签下面的内容，不保留标签，并去掉每行行首空格及行尾空格，无空行。原文小括号及内部数字是源文件中注释项的标记，请保留。示例输出文件格式请参考“论语-原文-输出示例.txt”文件。注意：示例输出文件帮助考生了解输出格式，不作它用。</p>
+<p>问题2（10分）：在PY301-2.py文件中修改代码，对“论语-原文.txt”或“论语.txt”文件进一步提纯，去掉每行文字中所有小括号及内部数字，保存为“论文-提纯原文.txt”文件。示例输出文件格式请参考“论语-提纯原文-输出示例.txt”文件。注意：示例输出文件帮助考生了解输出格式，不作它用。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语.txt&#34;</span><span class="p">,</span> <span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-原文.txt&#34;</span><span class="p">,</span> <span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&#34; </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;gbk&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-原文.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;gbk&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;【原文】&#34;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;【注释】&#34;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">flag</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&#34; </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span> <span class="o">+</span> <span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-原文.txt&#34;</span><span class="p">,</span> <span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-提纯原文.txt&#34;</span><span class="p">,</span> <span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="n">line</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">______</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以下代码为提示框架</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在...处使用一行或多行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请在______处使用一行代码替换</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：提示框架代码可以任意修改，以完成程序功能为准</span>
+</span></span><span class="line"><span class="cl"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-原文.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;论语-提纯原文.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fi</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 循环去掉所有 (数字)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="s2">&#34;(&#34;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">left</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;(&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">right</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="n">left</span><span class="p">:</span><span class="n">right</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">fi</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">===================</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+        
+    </section>
+
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Mar 26, 2026 20:21 &#43;0800
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/python%E7%AC%94%E8%AE%B0/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg" loading="lazy" data-key="" data-hash="https://home.les-ailes1014.xyz/imgbed/1c302f4a8ea8b9e457a2beea721ca90117043b8e.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Python笔记</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/java%E7%AC%94%E8%AE%B0/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://home.les-ailes1014.xyz/imgbed/%e5%b1%8f%e5%b9%95%e6%88%aa%e5%9b%be%202025-10-28%20203034.png" loading="lazy" data-key="" data-hash="https://home.les-ailes1014.xyz/imgbed/屏幕截图 2025-10-28 203034.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Java笔记</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 冬日晴空
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
